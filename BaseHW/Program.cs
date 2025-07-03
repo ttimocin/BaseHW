@@ -111,7 +111,6 @@ app.UseAuthentication();
 app.UseAuthorization();
 
 // Healthcheck endpoint for Railway
-app.MapGet("/", () => "BaseHW is running!");
 app.MapGet("/health", () => "OK");
 app.MapGet("/ping", () => "pong");
 
