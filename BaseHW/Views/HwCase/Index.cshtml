@@ -1,0 +1,258 @@
+﻿@{
+    ViewData["Title"] = "Super Treasure Hunt";
+
+}
+
+<head>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8201505636469020"
+            crossorigin="anonymous"></script>
+
+    <style>
+
+
+        table {
+            width: 50%;
+            border-collapse: collapse;
+            margin: 20px auto;
+            max-width: 350px;
+            font-family: Arial, sans-serif;
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: center;
+            border: 1px solid #ddd;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        tr:hover {
+            background-color: #f5f5f5;
+        }
+
+        .container {
+            display: flex;
+            margin: 60px; /* Sol ve sağdan en az 60px içerde olacak */
+            padding: 30px;
+        }
+
+        .left-section {
+            flex: 70%;
+            text-align: justify;
+            margin-right: 30px;
+        }
+
+            .left-section img {
+                width: 500px;
+                height: 500px;
+            }
+
+        .right-section {
+            flex: 30%;
+            padding-left: 40px; /* Sağ tarafta içerikten 20px içerde olacak */
+        }
+
+        .nav-button {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 5px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .right-section p {
+            margin-bottom: 20px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        td {
+            border: 1px solid #ccc;
+            padding: 8px;
+        }
+
+
+        .header {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            width: 80%;
+            margin-bottom: 30px;
+            text-decoration: none;
+        }
+
+            .header h4 {
+                font-size: 24px;
+                color: #333;
+                padding: 10px;
+                text-align: center;
+                background-color: #fff;
+                border-radius: 5px;
+                margin: 5px;
+                flex-basis: calc(20% - 10px);
+                text-decoration: none;
+            }
+
+            .header h2 {
+                text-align: center;
+                justify-content: center;
+            }
+
+            .header a {
+                text-decoration: none;
+            }
+
+
+        @@media screen and (max-width: 768px) {
+            .container {
+                flex-direction: column;
+                padding: 2px;
+                margin: 0px;
+            }
+
+                .container .left-section {
+                    margin-left: 50px;
+                }
+
+          .container .left-section h2 {
+                        margin-top: 15px;
+                        text-align: center;
+                        margin-right: 15px;
+                    }
+
+            .right-section {
+                padding-left: 0px; /* Sağ tarafta içerikten 20px içerde olacak */
+            }
+
+            .header h1 {
+                font-size: 19px;
+                color: #333;
+                padding: 5px;
+                text-align: center;
+                background-color: #fff;
+                border-radius: 5px;
+                margin: 5px;
+                flex-basis: calc(20% - 10px);
+                text-decoration: none;
+            }
+
+            .left-section {
+                margin-right: 0px;
+            }
+
+
+        }
+
+        .button-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+            justify-content: center;
+        }
+
+            .button-container .button {
+                background-color: #4CAF50;
+                color: white;
+                padding: 5px 10px;
+                border: none;
+                cursor: pointer;
+                border-radius: 3px;
+                font-size: 13px;
+                text-decoration: none;
+                text-align: center;
+            }
+
+                .button-container .button a {
+                    align-items: center;
+                }
+    </style>
+
+</head>
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<body>
+    <div class="container">
+        <div class="left-section">
+            <div class="geri">
+            <a href="/info/">Info</a> »
+            </div>
+
+            <h2><b>@_localization.Getkey("info10").Value</b></h2>
+            <div class="header">
+                <a href="/hwcase/case2023a"><h4>2023 A Case</h4></a>
+                <a href="/hwcase/case2023b"><h4>2023 B Case</h4></a>
+                <a href="/hwcase/case2023c"><h4>2023 C Case</h4></a>
+                <a href="/hwcase/case2023d"><h4>2023 D Case</h4></a>
+                <a href="/hwcase/case2023e"><h4>2023 E Case</h4></a>
+                <a href="/hwcase/case2023f"><h4>2023 F Case</h4></a>
+                <a href="/hwcase/case2023g"><h4>2023 G Case</h4></a>
+                <a href="/hwcase/case2023h"><h4>2023 H Case</h4></a>
+                <a href="/hwcase/case2023j"><h4>2023 J Case</h4></a>
+                <a href="/hwcase/case2023k"><h4>2023 K Case</h4></a>
+                <a href="/hwcase/case2023l"><h4>2023 L Case</h4></a>
+                <a href="/hwcase/case2023m"><h4>2023 M Case</h4></a>
+                <a href="/hwcase/case2023n"><h4>2023 N Case</h4></a>
+                <a href="/hwcase/case2023p"><h4>2023 P Case</h4></a>
+                <a href="/hwcase/case2023q"><h4>2023 Q Case</h4></a>
+
+
+            </div>
+
+       
+        </div>
+
+        <div class="right-section">
+            <h4 style="text-align:center">@_localization.Getkey("info1").Value</h4>
+            <div class="button-container">
+
+                <a href="/info/basecode" class="button">@_localization.Getkey("info2").Value</a>
+                <a href="/info/caseletters" class="button">@_localization.Getkey("info3").Value</a>
+                <a href="/info/longshortcard" class="button">@_localization.Getkey("info4").Value</a>
+                <a href="/info/siku" class="button">Siku</a>
+
+            </div>
+            <h4 style="text-align:center">@_localization.Getkey("info5").Value</h4>
+
+            <div class="button-container">
+
+                <a href="/info/redlines" class="button">Hot Wheels Redlines 1968 - 1976</a>
+                <a href="/info/blackwall77" class="button">Hot Wheels Blackwalls Era 1977 - 1988</a>
+                <a href="/info/bluecard89" class="button">Hot Wheels Blue Card Era 1989 - 1994</a>
+                <a href="/info/thunt" class="button">@_localization.Getkey("info6").Value</a>
+                <a href="/SuperTreauserHunt/index" class="button">@_localization.Getkey("info7").Value</a>
+
+            </div>
+            <h4 style="text-align:center">@_localization.Getkey("info8").Value</h4>
+
+            <div class="button-container">
+
+                <a href="/MatchboxSuperChase/index" class="button">@_localization.Getkey("info9").Value</a>
+
+            </div>
+
+            <h4 style="text-align:center">@_localization.Getkey("info10").Value</h4>
+
+            <div class="button-container">
+
+                <a href="/hwcase/index" class="button">2023 Case Letter</a>
+
+            </div>
+        </div>
+
+
+    </div>
+</body>
+</html>

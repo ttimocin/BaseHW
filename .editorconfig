@@ -1,0 +1,4 @@
+﻿[*.cs]
+
+# IDE0059: Bir değerin gereksiz ataması
+dotnet_diagnostic.IDE0059.severity = silent

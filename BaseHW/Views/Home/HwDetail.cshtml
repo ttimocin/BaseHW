@@ -1,0 +1,34 @@
+﻿@model BaseHW.Models.Domain.Hw
+
+@{
+}
+
+<html>
+<head>
+
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8201505636469020"
+            crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+<div class="hw-detail w-80 m-auto">
+    <div class="img-container">
+        <img alt="image" src="/Uploads/@Model.Image">
+    </div>
+
+    <div class="detail-container">
+        <h3>@_localization.Getkey("modeladi").Value: @Model.Title</h3>
+        <h4>@Model.HwyearNames</h4>
+        <h4>@_localization.Getkey("renk").Value: @Model.Renk</h4>
+        <h4>@_localization.Getkey("seri").Value : @Model.Seri</h4>
+        <h4>@_localization.Getkey("olcek").Value : @Model.Director</h4>
+    </div>
+</div>
+<div class="w-80 m-auto">
+    <a href="/Home/HotWheels" class="btn btn-default">@_localization.Getkey("geri").Value</a>
+</div>
+
+</body>
+
+</html>

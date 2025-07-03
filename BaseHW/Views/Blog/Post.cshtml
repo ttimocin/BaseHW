@@ -1,0 +1,123 @@
+﻿@model BaseHW.ViewModels.BlogPostVM
+
+@{
+    ViewData["Title"] = "Post";
+    string thumbnailUrl = "";
+    if (Model.ThumbnailUrl == null)
+    {
+        thumbnailUrl = "/blog/assets/img/home-bg.jpg";
+    }
+    else
+    {
+        thumbnailUrl = "/thumbnails/" + Model.ThumbnailUrl;
+    }
+}
+
+<head>
+
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8201505636469020"
+            crossorigin="anonymous"></script>
+
+    <style>
+        .top {
+            margin-left: 150px;
+            margin-right: 150px;
+            margin-top: 50px;
+            margin-bottom: 20px;
+        }
+
+        .top img {
+                max-width: 200px;
+                max-height: 200px;
+                padding: 15px;
+        }
+
+        @@media (max-width: 920px) {
+            .top {
+                margin-left: 90px;
+                margin-right: 90px;
+                margin-top: 30px;
+                margin-bottom: 15px;
+            }
+        }
+
+        @@media (max-width: 600px) {
+            .top {
+                margin-left: 50px;
+                margin-right: 50px;
+                margin-top: 15px;
+                margin-bottom: 9px;
+            }
+
+
+            @@media (max-width: 480px) {
+                .top {
+                    margin-left: 10px;
+                    margin-right: 10px;
+                    margin-top: 10px;
+                    margin-bottom: 5px;
+                }
+            }
+
+    </style>
+</head>
+
+<header class="w3-container w3-center w3-padding-32">
+</header>
+
+
+<div class="top">
+
+    <h1 class="title" style="font-size: 20px; margin: 15px; "><a href="/home/index">@_localization.Getkey("geridon").Value</a></h1>
+
+
+    <div class="w3-card-4 w3-margin w3-white">
+
+
+
+        <img src="@thumbnailUrl">
+
+
+
+
+
+    <!-- Header -->
+        <div class="w3-margin">
+
+        <h2><b>@Model.Title</b></h2>
+        <h4><b>@Model.ShortDescription</b></h4>
+
+        </div>
+
+                <div class="w3-margin ">
+
+
+
+                @Html.Raw(Model.Description)
+    </div>
+
+     
+</div>
+
+    <div class="ss">
+
+
+
+   
+
+            <div class="w3-card-4 w3-margin w3-white">
+            <div class="w3-margin">
+
+                <span class="meta">
+
+                    @_localization.Getkey("tarih").Value @Model.CreatedDate.ToShortDateString()
+                    @_localization.Getkey("yazar").Value <a href="#!">@Model.Username</a>
+
+                </span>
+        </div>
+
+        </div>
+
+
+        </div>
+

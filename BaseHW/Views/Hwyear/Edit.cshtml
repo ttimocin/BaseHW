@@ -1,0 +1,48 @@
+﻿@model BaseHW.Models.Domain.Hwyear
+@{
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+
+
+}
+
+<main id="main" class="main">
+
+    <div class="container-fluid">
+        <div class="card">
+
+            <form class="w-40" asp-action="Update" method="post">
+
+                <div class="card-header bg-primary mb-1">
+                    <h4 class="card-title text-white">Üretim Yılı Güncelle </h4>
+                </div>
+                
+                <div class="card-body">
+                  <input type="hidden" class="input" asp-for="Id">
+
+                    <div class="input-container">
+                             <label asp-for="HwyearName" class="w-40">HwyearName</label>
+                            <input type="text" class="input" asp-for="HwyearName">
+
+                     </div>
+
+    <div class="message-box pd-x-28 error">
+        <span asp-validation-for="HwyearName"></span>
+    </div>
+
+    @if (TempData["msg"] != null)
+    {
+        <div class="alert mb-1">
+            @TempData["msg"]
+        </div>
+    }
+
+                    <div class="input-container">
+                        <button class="btn btn-primary" type="submit">Kaydet</button>
+                        <a class="btn btn-primary" href="/Hwyear/HwyearList ">Tüm Kayıtlar</a>
+                    </div>
+                </div>
+
+</form>
+        </div>
+    </div>
+</main>

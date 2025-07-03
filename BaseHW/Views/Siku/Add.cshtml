@@ -1,0 +1,108 @@
+﻿@model BaseHW.Models.Domain.Siku
+@{
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+
+}
+
+<main id="main" class="main">
+
+    <div class="container-fluid">
+        <div class="card">
+<form class="w-40" asp-action="Add" method="post" enctype="multipart/form-data">
+                <div class="card-header bg-primary mb-1">
+                    <h4 class="card-title text-white">
+                        Model Ekle
+                    </h4>
+                </div>
+                <div class="card-body">
+
+    <div class="input-container">
+        <label asp-for="Title" class="w-40">Model Adı</label>
+        <input type="text" class="input" asp-for="Title">
+    </div>
+    <div class="message-box pd-x-28 error">
+        <span asp-validation-for="Title"></span>
+    </div>
+
+    <div class="input-container">
+        <label asp-for="ImageFile" class="w-40">Fotoğraf</label>
+        <input type="file" asp-for="ImageFile">
+    </div>
+    <div class="message-box pd-x-28 error">
+        <span asp-validation-for="ImageFile"></span>
+    </div>
+
+
+
+    <div class="input-container">
+        <label asp-for="Sikuyears" class="w-40">Üretim Yılı</label>
+        <select asp-items="Model.SikuyearList" class="input" asp-for="Sikuyears" multiple>
+            <option value="">--select--</option>
+
+        </select>
+    </div>
+    <div class="message-box pd-x-28 error">
+        <span asp-validation-for="Sikuyears"></span>
+    </div>
+
+    <div class="input-container">
+        <label asp-for="Renk" class="w-40">Renk</label>
+        <input type="text" class="input" asp-for="Renk">
+    </div>
+    <div class="message-box pd-x-28 error">
+        <span asp-validation-for="Renk"></span>
+    </div>
+
+    <div class="input-container">
+        <label asp-for="Seri" class="w-40">Seri</label>
+        <input type="text" class="input" asp-for="Seri">
+    </div>
+    <div class="message-box pd-x-28 error">
+        <span asp-validation-for="Seri"></span>
+    </div>
+
+    <div class="input-container">
+        <label asp-for="Director" class="w-40">Ölçek</label>
+        <input type="text" class="input" asp-for="Director">
+    </div>
+    <div class="message-box pd-x-28 error">
+        <span asp-validation-for="Director"></span>
+    </div>
+
+
+
+
+
+    @if (TempData["msg"] != null)
+    {
+        <div class="alert mb-1">
+            @TempData["msg"]
+        </div>
+    }
+
+    <div class="input-container">
+                        <button class="btn btn-primary" type="submit">Kaydet</button>
+                        <a class="btn btn-primary" href="/Siku/SikuList ">Tüm Kayıtlar</a>
+    </div>
+
+                </div>
+
+</form>
+        </div>
+
+        </div>
+
+</main>
+
+@section Scripts{
+    <partial name="_ValidationScriptsPartial" />
+    <script>
+        $(".custom-file").on("change", function () {
+            var fileName = $(this).val().split("\\").pop();
+            $(this).siblings(".custom-file-label").addClass("selected").html(fileName);
+            document.getElementById('thumbnail').src = window.URL.createObjectURL(this.files[0])
+        });
+
+    </script>
+
+    }

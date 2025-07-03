@@ -1,0 +1,75 @@
+﻿@model IEnumerable<BaseHW.Models.Domain.Sikuyear>
+@{
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+
+   
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <style>
+
+
+
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid">
+
+
+        <div class="card-header bg-primary mb-1">
+            <h4 class="card-title text-white">
+    Sikuyears
+            </h4>
+        </div>
+
+        <div class="card-body">
+            <div class="input-container">
+
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Action</th>
+        </tr>
+        @foreach(var item in Model){
+        <tr>
+                <td>@item.SikuyearName</td>
+            <td>
+                    <a href="/Sikuyear/Edit?id=@item.Id" class="btn btn-default"><i class="fa fa-edit"></i></a>
+                    <a onclick="return window.confirm('Are you sure?')" href="/Sikuyear/Delete?id=@item.Id" class="btn btn-danger"><i class="fa fa-trash"></i></a>
+
+            
+            </td>
+        </tr>
+        }
+    </table>
+        </div>
+        </div>
+
+        <div class="input-container">
+            <a class="btn btn-primary" href="/Sikuyear/Add">Geri</a>
+        </div>
+
+
+</div>
+
+
+
+@section Scripts{
+    <partial name="_ValidationScriptsPartial" />
+    <script>
+        $(".custom-file").on("change", function () {
+            var fileName = $(this).val().split("\\").pop();
+            $(this).siblings(".custom-file-label").addClass("selected").html(fileName);
+            document.getElementById('thumbnail').src = window.URL.createObjectURL(this.files[0])
+        });
+
+    </script>
+
+    }
+
+</body>
+</html>

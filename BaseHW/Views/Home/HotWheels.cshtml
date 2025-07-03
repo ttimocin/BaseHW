@@ -1,0 +1,279 @@
+﻿@model BaseHW.Models.DTO.HwListVm
+
+
+@{
+    ViewData["Title"] = "Hotwheels";
+
+    Layout = "_Layout";
+
+}
+
+<head>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8201505636469020"
+            crossorigin="anonymous"></script>
+
+    <style>
+
+        .search-bar {
+            width: 100%;
+            padding: 0 2%;
+        }
+
+            .search-bar input[type="text"] {
+                padding: 0.7rem;
+                border: 1px solid lightgray;
+                border-radius: 0.25rem;
+                font-size: 1rem;
+                width: 25%;
+            }
+
+            .search-bar button {
+                border-radius: 0.25rem;
+                font-size: 1rem;
+                padding: 0.7rem 0.9rem;
+                border: none;
+                background-color: rgb(192, 192, 192);
+                color: black;
+                cursor: pointer;
+            }
+
+        .movies {
+            display: flex;
+            justify-content: left;
+            flex-wrap: wrap;
+            /* background-color: red; */
+            font-family: var(--font-mukta);
+        }
+
+        .posts {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            /* background-color: red; */
+            font-family: var(--font-mukta);
+        }
+
+        .movie-card {
+            padding: 2%;
+            margin: 2%;
+            width: 15%;
+            display: flex;
+            background-color: lightgray;
+            flex-direction: column;
+            box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
+            cursor: pointer;
+            /* background-color: yellow; */
+        }
+
+        .post-card {
+            padding: 2%;
+            margin: 2%;
+            width: 700px;
+            display: flex;
+            background-color: lightgray;
+            flex-direction: row-reverse;
+            box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
+            cursor: pointer;
+            /* background-color: yellow; */
+        }
+
+            .post-card .post-info {
+                min-width: 500px;
+            }
+
+
+        .movie-card:hover {
+            cursor: pointer;
+            font-size: 15px;
+            box-shadow: rgba(17, 17, 26, 0.1) 0px 18px 30px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
+        }
+
+        .movie-image img {
+            width: 100%;
+        }
+
+        .post-image img {
+            margin-right: 0px;
+            margin-left: 50px;
+            width: 40%;
+        }
+
+        /* Pagination links */
+        .pagination {
+            display: flex;
+            justify-content: right;
+            margin-right: 5rem;
+        }
+
+            .pagination a {
+                color: black;
+                padding: 8px 16px;
+                text-decoration: none;
+                transition: background-color .3s;
+            }
+
+                /* Style the active/current link */
+                .pagination a.active {
+                    background-color: rgb(169, 30, 255);
+                    color: white;
+                }
+
+                /* Add a grey background color on mouse-over */
+                .pagination a:hover:not(.active) {
+                    background-color: #ddd;
+                }
+
+
+
+
+        /* utilities start */
+        .w-90 {
+            width: 90%;
+        }
+
+        .w-80 {
+            width: 80%;
+        }
+
+        .w-70 {
+            width: 60%;
+        }
+
+        .w-60 {
+            width: 60%;
+        }
+
+        .w-50 {
+            width: 50%;
+        }
+
+        .w-40 {
+            width: 40%;
+        }
+
+        .w-30 {
+            width: 30%;
+        }
+
+        .error {
+            color: red;
+        }
+
+        .success {
+            color: green;
+        }
+
+        .mb-1 {
+            margin-bottom: 0.7rem;
+        }
+
+        .mt-1 {
+            margin-top: 0.7rem;
+        }
+
+        .pt-1 {
+            padding-top: 0.7rem;
+        }
+
+        .pb-1 {
+            padding-top: 0.7rem;
+        }
+
+        .m-auto {
+            margin: auto;
+        }
+        /* utilities end */
+
+        .movie-detail {
+            display: flex;
+            font-family: var(--font-mukta);
+            max-height: 50%;
+        }
+
+        .img-container {
+            max-width: 40%;
+        }
+
+            .img-container img {
+                max-width: 100%;
+                height: auto;
+                border-radius: 0.25rem;
+            }
+
+        .detail-container {
+            padding: 0 1.2rem;
+        }
+
+        @@media (max-width: 920px) {
+            .movie-card {
+                flex-basis: 17%;
+            }
+        }
+
+        @@media (max-width: 600px) {
+            .movie-card {
+                flex-basis: 36%;
+            }
+
+            .movie-detail {
+                display: flex;
+                flex-direction: column;
+            }
+
+            .detail-container {
+                padding: 0 !important;
+            }
+        }
+
+        @@media (max-width: 480px) {
+            .movie-card {
+                flex-basis: 46%;
+            }
+        }
+
+    </style>
+</head>
+
+
+<header class="w3-container w3-center w3-padding-32">
+</header>
+
+<section class="search-bar">
+    <form method="get" asp-action="Hw">
+        <input type="text" name="term" placeholder="@_localization.Getkey("arama").Value">
+        <button type="submit"><i class="fa fa-search"></i></button>
+    </form>
+</section>
+<section class="movies">
+    @foreach (var hw in Model.HwList)
+    {
+        <div class="movie-card" onclick="window.location.href='/Home/HwDetail?hwId=@hw.Id'">
+            <div class="movie-image">
+                <img src="/Uploads/@hw.Image">
+            </div>
+            <div class="hw-info">
+                <h4>@hw.Title</h4>
+                <h4>@_localization.Getkey("uretimyil").Value: @hw.HwyearNames</h4>
+                <h4>@_localization.Getkey("renk").Value: @hw.Renk</h4>
+                @* <h4>Cast : @hw.Seri</h4>*@
+            <h4>@_localization.Getkey("olcek").Value: @hw.Director</h4>
+            </div>
+        </div>
+    }
+</section>
+
+<div class="pagination">
+    @for (int i = 1; i <= Model.TotalPages; i++)
+    {
+        if (i == Model.CurrentPage)
+        {
+            <a href="/Home/HotWheels?currentPage=@i&term=@Model.Term" class="active">@i</a>
+        }
+        else
+        {
+            <a href="/Home/HotWheels?currentPage=@i&term=@Model.Term">@i</a>
+
+        }
+    }
+
+</div>

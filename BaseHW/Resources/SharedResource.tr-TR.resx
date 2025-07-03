@@ -1,0 +1,704 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="1hafta" xml:space="preserve">
+    <value>1. hafta</value>
+  </data>
+  <data name="2022list" xml:space="preserve">
+    <value>2022 Hot Wheels Araç Listesi</value>
+  </data>
+  <data name="2023list" xml:space="preserve">
+    <value>2023 Hot Wheels Araç Listesi</value>
+  </data>
+  <data name="aboutus1" xml:space="preserve">
+    <value>Biz, model arabalar ve koleksiyoncuları için özel olarak tasarlanmış bir internet sitesi ve mobil uygulama sunan bir ekip olarak buradayız. Tutkulu koleksiyoncuların, model araba dünyasında bir araya gelmesini ve birlikte deneyimlerini paylaşmasını hedefliyoruz.</value>
+  </data>
+  <data name="aboutus2" xml:space="preserve">
+    <value>Vizyonumuz, model arabaların heyecanını ve büyüsünü yakalamak, araba tutkunlarının koleksiyonlarını düzenlemelerine ve değerli parçalarını takip etmelerine yardımcı olmaktır. Sitemizde ve mobil uygulamamızda sunduğumuz hizmetlerle, araba tutkunlarına benzersiz bir deneyim sunmayı amaçlıyoruz.</value>
+  </data>
+  <data name="aboutus3" xml:space="preserve">
+    <value>İnternet sitemizde, özellikle Siku marka arabalar için geniş bir veritabanı sunuyoruz. Siku koleksiyoncularının, en sevdikleri modelleri keşfetmelerine ve kendi koleksiyonlarını oluşturmalarına olanak sağlıyoruz. Ayrıca, Hot Wheels araçlarıyla da ilgilenen kullanıcılarımız için değerli parçaların kayıtlarını da tutuyoruz. İstediğiniz araçları arayabilir, özelliklerini kontrol edebilir ve koleksiyonunuza ekleyebilirsiniz.</value>
+  </data>
+  <data name="aboutus4" xml:space="preserve">
+    <value>Mobil uygulamamız ise kullanıcıların model araba koleksiyonlarını taşımalarına olanak tanır. Uygulamayı indiren kullanıcılar, kendi koleksiyonlarındaki arabaları kolayca kaydedebilir,
+fotoğraflarını yükleyebilir ve notlar ekleyebilir. Böylece koleksiyonlarını her zaman yanlarında
+taşıyabilir ve arkadaşlarıyla paylaşabilirler.</value>
+  </data>
+  <data name="aboutus5" xml:space="preserve">
+    <value>Ekip olarak, kullanıcılarımızın deneyimini sürekli geliştirmek için çalışıyoruz. Sitemizde ve
+uygulamamızda daha fazla marka ve model eklemek, kullanıcı dostu özellikler sunmak ve koleksiyoncular arasında iletişimi teşvik etmek için çabalıyoruz.</value>
+  </data>
+  <data name="aboutus6" xml:space="preserve">
+    <value>Model arabalarla ilgilenen herkesi topluluğumuza katılmaya ve tutkularını paylaşmaya davet ediyoruz.
+Sitemizi ziyaret edin, mobil uygulamamızı indirin ve model arabaların büyüleyici dünyasına
+dalın.</value>
+  </data>
+  <data name="aboutus7" xml:space="preserve">
+    <value>Araba tutkusuyla dolu günler dileriz!</value>
+  </data>
+  <data name="aboutus8" xml:space="preserve">
+    <value>BaseHW.net Ekibi</value>
+  </data>
+  <data name="altin" xml:space="preserve">
+    <value>Altın</value>
+  </data>
+  <data name="anasayfa" xml:space="preserve">
+    <value>ANASAYFA</value>
+  </data>
+  <data name="arama" xml:space="preserve">
+    <value>Arama</value>
+  </data>
+  <data name="base1" xml:space="preserve">
+    <value>Hot Wheels "Base Codes" ne anlama geliyor?</value>
+  </data>
+  <data name="base2" xml:space="preserve">
+    <value>2008 yılından itibaren Mattel, Hot Wheels ve Matchbox araçlarının alt kısmına üretim tarihini
+gösteren bir kod sistemi ekledi. Bu sistem, "Base Code" olarak adlandırıldı. Base Code, aracın 
+üretildiği yılı ve hangi haftada üretildiğini belirten bir kombinasyondan oluşmaktadır.</value>
+  </data>
+  <data name="base3" xml:space="preserve">
+    <value>Base Code'un ilk karakteri, aracın üretildiği yılı temsil eden bir harfle başlar ve ardından üretim yılının hangi haftasında üretildiğini gösteren rakamlar gelir. Örneğin, bir base code "B30" ise, bu aracın 2009 yılının 30. haftasında üretildiğini gösterir. Benzer şekilde, "P41" base code'u, 2021 yılının 41. haftasında üretildiği anlamına gelir.</value>
+  </data>
+  <data name="base4" xml:space="preserve">
+    <value>Önemli bir not olarak, harfler arasında "I", "O" ve "Q" kullanılmamaktadır. Bu sayede tarih kodları daha net ve anlaşılır hale gelmektedir.</value>
+  </data>
+  <data name="base5" xml:space="preserve">
+    <value>Bu base code sistemi, koleksiyoncular için araçların üretim tarihlerini belirlemek ve takip etmek açısından oldukça değerli bir bilgi kaynağıdır.</value>
+  </data>
+  <data name="base6" xml:space="preserve">
+    <value>Harf</value>
+  </data>
+  <data name="base7" xml:space="preserve">
+    <value>Yıl</value>
+  </data>
+  <data name="beyaz" xml:space="preserve">
+    <value>Beyaz</value>
+  </data>
+  <data name="bilgibankasi" xml:space="preserve">
+    <value>Bilgi Bankası</value>
+  </data>
+  <data name="black1" xml:space="preserve">
+    <value>Hot Wheels Blackwalls dönemi, Mattel'in Hot Wheels serisini önemli bir şekilde yeniden tasarladığı 1977 
+ ile 1988 yılları arasındaki dönemi ifade eder. Bu süre zarfında, Hot Wheels arabalarının tekerleklerindeki kırmızı çizgiler yerine siyah duvarlar (black walls) kullanılmaya başlandı ve bu da arabalara daha şık ve  modern bir görünüm kazandırdı.</value>
+  </data>
+  <data name="black2" xml:space="preserve">
+    <value>Blackwalls dönemi, daha gerçekçi tasarımlara ve otantikliğe odaklanarak, Ferrari, Porsche ve Lamborghini gibi üreticilerin gerçek hayattaki araçlarından esinlenerek çeşitli araba modellerini piyasaya sürdüğü bir değişim gördü. Bu gerçekçilik vurgusu, detaylı tasarımlar ve yüksek kaliteli yapılarıyla Blackwalls dönemi arabalarına ilgi duyan daha yaşlı bir koleksiyoncu ve hayran kitlesini cezbetti.</value>
+  </data>
+  <data name="black3" xml:space="preserve">
+    <value>Yeni siyah duvarların yanı sıra, Blackwalls dönemi aynı zamanda bazı araba parçalarında krom kaplamalı plastik kullanımını, yeni bir plastik ön cam tasarımını ve daha geniş bir gövde stili ve boya şeması yelpazesini tanıttı.</value>
+  </data>
+  <data name="black4" xml:space="preserve">
+    <value>Koleksiyoncular ve hayranlar arasında popüler olan Blackwalls dönemi, 1989'da daha detaylı ve gerçekçi arabaların lastiklerinin yanı sıra diğer gelişmiş özelliklerle sunulduğu Hot Wheels Blue Card döneminin başlangıcıyla sona erdi. Ancak yine de, Blackwalls dönemi Hot Wheels'in tarihinde önemli bir dönem olmaya devam ediyor ve birçok koleksiyoncu bugün hala bu klasik arabalara ilgi göstermeye ve değer vermeye devam ediyor.</value>
+  </data>
+  <data name="blue1" xml:space="preserve">
+    <value>Hot Wheels Blue Cards, Mattel tarafından 1989 ile 1994 yılları arasında üretilen Hot Wheels arabaları serisini ifade eder. Bazıları tarafından "Collector Number" dönemi olarak da adlandırılır. Mavi Kartlar, daha önce 20 yıldan fazla süredir sarı ve kırmızı ambalajlarla sunulan Hot Wheels ambalajlarının bir yeniden tasarımıydı.</value>
+  </data>
+  <data name="blue2" xml:space="preserve">
+    <value>Mavi Kart dönemi, daha modern bir görünüme sahip mavi ve gümüş renkli bir ambalaj ve tasarım ile karakterize ediliyordu. Ambalaj ayrıca, koleksiyoncuların arabayı paketten çıkarmadan içini görmesine olanak tanıyan şeffaf plastik blister paket içeriyordu.</value>
+  </data>
+  <data name="blue3" xml:space="preserve">
+    <value>Yeni ambalaj tasarımının yanı sıra, Mavi Kart dönemi, Hot Wheels serisine daha detaylı ve gerçekçi tasarımların yanı sıra çalışan süspansiyonlar ve açılabilir kapılar gibi yeni özellikleri de tanıttı.</value>
+  </data>
+  <data name="blue4" xml:space="preserve">
+    <value>Koleksiyoncular arasında Mavi Kart döneminin popülerliğine rağmen, 1995 yılında Hot Wheels Hazine Avı serisinin tanıtımıyla sona erdi. Bu yeni seride, daha da detaylı ve koleksiyon değeri yüksek arabalar benzersiz boya şemaları ve tasarımlarıyla yer aldı.</value>
+  </data>
+  <data name="blue5" xml:space="preserve">
+    <value>Bugün, Hot Wheels Mavi Kartlar, koleksiyoncular ve hayranlar arasında popülerliğini koruyor ve birçok kişi bu dönemin nadir ve zor bulunan modellerini arıyor. Mavi Kart dönemi, Redlines veya Blackwalls gibi daha önceki dönemler kadar nostaljiye sahip olmasa da, Hot Wheels'in tarihinde önemli bir dönem olarak kalır ve ciddi koleksiyoncuların  koleksiyonlarının değerli bir parçasıdır.</value>
+  </data>
+  <data name="bordo" xml:space="preserve">
+    <value>Bordo</value>
+  </data>
+  <data name="bronz" xml:space="preserve">
+    <value>Bronz</value>
+  </data>
+  <data name="card1" xml:space="preserve">
+    <value>Hot Wheels "Uzun Kart" ve "Kısa Kart" ne anlama geliyor?</value>
+  </data>
+  <data name="card2" xml:space="preserve">
+    <value>Hot wheels kartonetleri Avrupa'da kısa, Amerika kıtasında uzun olarak satılmaktadır. Avrupa'ya bazı özel seri araçlar uzun kart olarak gelmektedir. Ancak regular olarak adlandırılan mainline araçlar kısa kart olarak gelmektedir.</value>
+  </data>
+  <data name="case1" xml:space="preserve">
+    <value>Hot Wheels "Case Letters" ne anlama geliyor?</value>
+  </data>
+  <data name="case2" xml:space="preserve">
+    <value>Hot Wheels kutuları üzerinde bazı kodlar bulunur. Büyük harf I ve O harfleri kullanılmaz,  çünkü bir ve sıfırı hatırlatırlar.  Yılda 15 ana seri harf şunlardır:</value>
+  </data>
+  <data name="case3" xml:space="preserve">
+    <value>A, B, C, D, E, F, G, H, J, K, L, M, N, P ve Q.</value>
+  </data>
+  <data name="case4" xml:space="preserve">
+    <value>Hot Wheels ana seri kutuları 72 adet araç içerir. ABD kutuları "2593-" ile başlarken, Uluslararası  kasalar "C4982-" ile başlar. Tüm ana seri kutularda bir adet Treasure Hunt modeli bulunur, ancak her kutu içinde Super Treasure Hunt garanti değildir. Süper Treasure Hunt modellerinin tahmini olarak bin aracın birinde veya on dört kutu içinde birinde çıktığı düşünülmektedir.</value>
+  </data>
+  <data name="case5" xml:space="preserve">
+    <value>Uluslarası Hot Wheels kutu kodu - D Case içeren kutu</value>
+  </data>
+  <data name="case6" xml:space="preserve">
+    <value>Amerikan Hot Wheels kutu kodu - K Case içereN kutu</value>
+  </data>
+  <data name="color" xml:space="preserve">
+    <value>Renk</value>
+  </data>
+  <data name="contact1" xml:space="preserve">
+    <value>Her türlü görüş, soru ve önerileriniz için bize e-posta yoluyla ulaşabilirsiniz:</value>
+  </data>
+  <data name="contact2" xml:space="preserve">
+    <value>Görüşlerinizi bekliyoruz!</value>
+  </data>
+  <data name="copy1" xml:space="preserve">
+    <value>Telif Hakkı Politikamız</value>
+  </data>
+  <data name="copy10" xml:space="preserve">
+    <value>Göndermiş olduğunuz telif hakkı ihlali bildirimi incelenecek ve gereken durumlarda içerik kaldırılacak veya düzenlenecektir.</value>
+  </data>
+  <data name="copy11" xml:space="preserve">
+    <value>Lütfen, sitemizdeki içerikleri izinsiz kopyalamaktan veya herhangi bir şekilde izinsiz kullanmaktan kaçınınız. Aksi takdirde, yasal haklarımızı kullanma hakkımız saklıdır.</value>
+  </data>
+  <data name="copy12" xml:space="preserve">
+    <value>Saygılarımızla,</value>
+  </data>
+  <data name="copy2" xml:space="preserve">
+    <value>Sayın Ziyaretçi,</value>
+  </data>
+  <data name="copy3" xml:space="preserve">
+    <value>Bu web sitesini ziyaret ettiğiniz için teşekkür ederiz. Sitemizde yer alan bilgiler ve görseller, tarafımızca özenle hazırlanmış ve paylaşılmıştır. Tüm içerikler, yasal telif hakları ve diğer fikri mülkiyet hakları ile korunmaktadır.</value>
+  </data>
+  <data name="copy4" xml:space="preserve">
+    <value>Bu sayfada, fikri mülkiyet haklarını saygı duymayı ve telif hakkı ihlallerine karşı oluşturulan bir yöntemle sizinle işbirliği yapmayı taahhüt ediyoruz. Eğer sitemizde yer alan herhangi bir görsel veya bilginin telif haklarınıza, haklarınızı ihlal ettiğini düşünüyorsanız, lütfen aşağıda belirtilen adrese başvurun:</value>
+  </data>
+  <data name="copy5" xml:space="preserve">
+    <value>Telif Hakkı İhlali Bildirim Adresi:</value>
+  </data>
+  <data name="copy6" xml:space="preserve">
+    <value>Lütfen şu bilgileri içeren bir e-posta gönderin:</value>
+  </data>
+  <data name="copy7" xml:space="preserve">
+    <value>1- Telif hakkını ihlal ettiğini düşündüğünüz içeriğin açık ve detaylı tanımı,</value>
+  </data>
+  <data name="copy8" xml:space="preserve">
+    <value>2- İlgili içeriğin bulunduğu URL veya sayfa bağlantısı,</value>
+  </data>
+  <data name="copy9" xml:space="preserve">
+    <value>3- Telif hakkınızı kanıtlamak için kullanabileceğiniz belgeler veya diğer destekleyici bilgiler.</value>
+  </data>
+  <data name="destek" xml:space="preserve">
+    <value>Destek</value>
+  </data>
+  <data name="dmavi" xml:space="preserve">
+    <value>Deniz Mavisi</value>
+  </data>
+  <data name="eposta" xml:space="preserve">
+    <value>E-posta</value>
+  </data>
+  <data name="etiket" xml:space="preserve">
+    <value>Etiketler</value>
+  </data>
+  <data name="fotog" xml:space="preserve">
+    <value>Fotograf</value>
+  </data>
+  <data name="geri" xml:space="preserve">
+    <value>Geri</value>
+  </data>
+  <data name="geridon" xml:space="preserve">
+    <value>Geri Dön</value>
+  </data>
+  <data name="gri" xml:space="preserve">
+    <value>Gri</value>
+  </data>
+  <data name="gumus" xml:space="preserve">
+    <value>Gümüş</value>
+  </data>
+  <data name="hakkimizda" xml:space="preserve">
+    <value>Hakkımızda</value>
+  </data>
+  <data name="hosgeldiniz" xml:space="preserve">
+    <value>Hoşgeldiniz</value>
+  </data>
+  <data name="hotwheelsbilgi" xml:space="preserve">
+    <value>Hot Wheels, oyuncak araba dünyasının önde gelen markalarından biridir. 1968 yılında Mattel tarafından tanıtılan Hot Wheels, tasarım ve performans odaklı oyuncak arabalarıyla çocukların ve koleksiyoncuların kalbini kazanmıştır. Canlı renklere sahip çarpıcı tasarımları, lisanslı araçların minyatür replikaları ve özgün modelleri ile her yaştan araba tutkununun ilgisini çekiyor. Ayrıca, yarış pistleri ve oyun setleri ile oyuncuların eğlenceli ve rekabet dolu anlar yaşamasını sağlar. Hot Wheels, yaratıcılığı ve hayal gücünü teşvik ederek araba dünyasına eğlence dolu bir yolculuk sunuyor.</value>
+  </data>
+  <data name="hwkutuliste" xml:space="preserve">
+    <value>HW Kutu Listesi</value>
+  </data>
+  <data name="iletisim" xml:space="preserve">
+    <value>İLETİŞİM</value>
+  </data>
+  <data name="iletisimkisa" xml:space="preserve">
+    <value>İletişim</value>
+  </data>
+  <data name="image" xml:space="preserve">
+    <value>Fotoğraf</value>
+  </data>
+  <data name="inci" xml:space="preserve">
+    <value>İnci</value>
+  </data>
+  <data name="info" xml:space="preserve">
+    <value>BİLGİ</value>
+  </data>
+  <data name="info1" xml:space="preserve">
+    <value>Hot Wheels Hakkında</value>
+  </data>
+  <data name="info10" xml:space="preserve">
+    <value>Kutulara göre HW Araba Listesi</value>
+  </data>
+  <data name="info2" xml:space="preserve">
+    <value>Temel Kodlar</value>
+  </data>
+  <data name="info3" xml:space="preserve">
+    <value>Kutu Kodları</value>
+  </data>
+  <data name="info4" xml:space="preserve">
+    <value>Uzun Kart- Kısa Kart</value>
+  </data>
+  <data name="info5" xml:space="preserve">
+    <value>HW Treasure Hunt Serileri</value>
+  </data>
+  <data name="info6" xml:space="preserve">
+    <value>Treasure Hunts Tarihi - 1995</value>
+  </data>
+  <data name="info7" xml:space="preserve">
+    <value>Super Treasure Hunt Tarihi - 2007</value>
+  </data>
+  <data name="info8" xml:space="preserve">
+    <value>Matchbox Chase Listesi</value>
+  </data>
+  <data name="info9" xml:space="preserve">
+    <value>Matchbox 2021-2023 Chase Listesi</value>
+  </data>
+  <data name="infokucuk" xml:space="preserve">
+    <value>Bilgi</value>
+  </data>
+  <data name="infos" xml:space="preserve">
+    <value>Bilgi Bankası</value>
+  </data>
+  <data name="kapat" xml:space="preserve">
+    <value>Kapat</value>
+  </data>
+  <data name="kirmizi" xml:space="preserve">
+    <value>Kırmızı</value>
+  </data>
+  <data name="krem" xml:space="preserve">
+    <value>Krem Rengi</value>
+  </data>
+  <data name="kum" xml:space="preserve">
+    <value>Kum Rengi</value>
+  </data>
+  <data name="kutu" xml:space="preserve">
+    <value>Kutu Harfi</value>
+  </data>
+  <data name="kutukodliste" xml:space="preserve">
+    <value>Kutu kodlarına göre liste</value>
+  </data>
+  <data name="language" xml:space="preserve">
+    <value>LANGUAGE</value>
+  </data>
+  <data name="matchboxbilgi" xml:space="preserve">
+    <value>Matchbox, oyuncak araba dünyasının köklü ve ikonik markalarından biridir. 1953 yılında Lesney Products tarafından piyasaya sürülen Matchbox, gerçek hayattaki araçların minyatür replikalarını üreterek çocukların hayal dünyasını zenginleştirdi. Gerçekçi detayları, dayanıklı yapısı ve geniş model seçenekleri ile Matchbox, uzun yıllardır araba meraklıları tarafından sevilerek koleksiyonlarında yer alıyor. Oyuncak araba denildiğinde akla gelen ilk markalardan biri olan Matchbox, zamansız çekiciliğiyle günümüzde de nostaljik bir tutkuyu temsil ediyor.</value>
+  </data>
+  <data name="matchboxlist" xml:space="preserve">
+    <value>Matchbox SuperChase Listesi</value>
+  </data>
+  <data name="mavi" xml:space="preserve">
+    <value>Blue</value>
+  </data>
+  <data name="model" xml:space="preserve">
+    <value>Model İsmi</value>
+  </data>
+  <data name="modeladi" xml:space="preserve">
+    <value>Model Adı</value>
+  </data>
+  <data name="mor" xml:space="preserve">
+    <value>Mor</value>
+  </data>
+  <data name="olcek" xml:space="preserve">
+    <value>Ölçek</value>
+  </data>
+  <data name="ozellik" xml:space="preserve">
+    <value>Özellik</value>
+  </data>
+  <data name="pembe" xml:space="preserve">
+    <value>Pembe</value>
+  </data>
+  <data name="populargonderi" xml:space="preserve">
+    <value>Popüler Gönderiler</value>
+  </data>
+  <data name="privacy" xml:space="preserve">
+    <value>Gizlilik Politikası</value>
+  </data>
+  <data name="privacy1" xml:space="preserve">
+    <value>Bu gizlilik politikası, BaseHw.net adresindeki internet sitesine erişiminiz ve kullanımınızla ilgili bilgileri açıklar. Gizliliğinize saygı duyuyor ve kişisel verilerinizin gizliliğini koruma taahhüdünde bulunuyoruz.</value>
+  </data>
+  <data name="privacy10" xml:space="preserve">
+    <value>Gizlilik Politikası Güncellemeleri</value>
+  </data>
+  <data name="privacy11" xml:space="preserve">
+    <value>Gizlilik politikamızı zaman zaman güncelleyebiliriz. Herhangi bir güncelleme yaparsak,
+değişikliklerin sitemizde duyurulmasını sağlayacağız. Bu sayede, hangi bilgilerin toplandığı,
+nasıl kullanıldığı ve hangi koşullarda ifşa edildiği hakkında bilgilendirileceksiniz.</value>
+  </data>
+  <data name="privacy12" xml:space="preserve">
+    <value>Gizlilik politikamızla ilgili herhangi bir sorunuz varsa, lütfen hwdiecasttr@gmail.com adresinden bizimle
+iletişime geçin.</value>
+  </data>
+  <data name="privacy2" xml:space="preserve">
+    <value>Toplanan Bilgiler</value>
+  </data>
+  <data name="privacy3" xml:space="preserve">
+    <value>Sitemizi ziyaret ettiğinizde, BaseHw.Net olarak herhangi bir kişisel bilgi toplamamaktayız.</value>
+  </data>
+  <data name="privacy4" xml:space="preserve">
+    <value>Çerezler</value>
+  </data>
+  <data name="privacy5" xml:space="preserve">
+    <value>Sitemizde çerezler (cookies) kullanılmaktadır. Çerezler, internet sitesinin kullanıcının bilgisayarına veya mobil cihazına yerleştirilen küçük metin dosyalarıdır. Çerezler, siteyi daha kullanıcı dostu hale getirmek, kullanıcı tercihlerini hatırlamak ve sitemizin performansını izlemek için kullanılır. Çerezler, kişisel bilgilerinizi toplamaz ve gizliliğinizi ihlal etmez. Tarayıcınızın ayarlarından çerezleri kabul etmeyi reddedebilirsiniz, ancak bu durumda sitemizin bazı özelliklerini tam olarak kullanamayabilirsiniz.</value>
+  </data>
+  <data name="privacy6" xml:space="preserve">
+    <value>Veritabanlarındaki Bilgiler</value>
+  </data>
+  <data name="privacy7" xml:space="preserve">
+    <value>Sitemizdeki veritabanlarında yer alan hot wheels, siku ve diğer marka model araba bilgileri
+kullanıcıların araştırma yapması amacıyla sunulmaktadır. Bu bilgileri kullanıcılarımız,
+siteyi ziyaret ettiklerinde görüntüleyebilir ve araştırma yapabilirler. Sitemizde üyelik
+uygulaması olmadığı için, kişisel bilgilerinizi toplamıyoruz veya saklamıyoruz.</value>
+  </data>
+  <data name="privacy8" xml:space="preserve">
+    <value>Diğer Web Sitelerine Bağlantılar</value>
+  </data>
+  <data name="privacy9" xml:space="preserve">
+    <value>Sitemiz, diğer web sitelerine bağlantılar içerebilir. Bu bağlantılar, kullanıcıya ek
+bilgi sağlamak amacıyla sunulmuştur. Bağlantılı web sitelerin gizlilik uygulamalarıyla
+ilgili olarak sorumluluk taşımamaktayız. Bağlantıları kullanırken, hedeflenen web sitesinin
+gizlilik politikasını incelemenizi öneririz.</value>
+  </data>
+  <data name="privacyapp1" xml:space="preserve">
+    <value>Bu Gizlilik Politikası, BaseHW adlı mobil uygulamanın (bundan sonra “Uygulama” olarak anılacaktır)  kullanıcılarının gizliliğini nasıl koruduğumuzu açıklamaktadır. Uygulama, kullanıcılarının kişisel bilgilerini korumayı taahhüt eder ve bu bilgileri yalnızca burada açıklanan amaçlar doğrultusunda toplar ve kullanır.</value>
+  </data>
+  <data name="privacyapp10" xml:space="preserve">
+    <value>Çerezler</value>
+  </data>
+  <data name="privacyapp11" xml:space="preserve">
+    <value>Uygulama, kullanıcıların cihazlarına çerezler yerleştirebilir. Çerezler, Uygulama’nın kullanımını analiz etmek, kullanıcılara daha iyi bir deneyim sunmak ve Uygulama’nın kullanımını ölçmek için kullanılır. Kullanıcılar, çerezleri devre dışı bırakabilir veya reddedebilir, ancak bu durumda Uygulama’nın bazı işlevleri çalışmayabilir.</value>
+  </data>
+  <data name="privacyapp12" xml:space="preserve">
+    <value>Güvenlik</value>
+  </data>
+  <data name="privacyapp13" xml:space="preserve">
+    <value>Uygulama, kullanıcıların kişisel bilgilerinin güvenliği için gerekli önlemleri alır. Uygulama, kullanıcıların model arabalarının fotoğrafları gibi hassas bilgilerin güvenliğini sağlamak gerekirse, Uygulama, kullanıcıların kişisel bilgilerinin güvenliği için gerekli önlemleri alır. Uygulama, kullanıcıların model arabalarının fotoğrafları gibi hassas bilgilerin güvenliğini sağlamak için uygun teknik ve yönetimsel güvenlik önlemlerini alır. Bunlar arasında, verilerin şifrelenmesi, güvenli sunucu ve veritabanı erişimi ve düzenli güvenlik testleri yer alır.</value>
+  </data>
+  <data name="privacyapp14" xml:space="preserve">
+    <value>Uygulama, çocukların kişisel bilgilerini bilerek toplamaz. Ancak, ebeveynlerin veya vasilerin izni olmadan 13 yaşın altındaki çocukların bu Uygulama’yı kullanmamasını öneririz.</value>
+  </data>
+  <data name="privacyapp15" xml:space="preserve">
+    <value>Veri Saklama Süresi</value>
+  </data>
+  <data name="privacyapp16" xml:space="preserve">
+    <value>Uygulama, kullanıcıların model arabaları hakkındaki bilgileri, kullanıcının talebi veya Uygulama’nın belirli bir süre sonra silinmeleri için belirlediği otomatik silme politikaları doğrultusunda silebilir. Kullanıcılar, Uygulama’ya hesaplarını silmek istediklerinde herhangi bir zaman içinde başvurabilirler.</value>
+  </data>
+  <data name="privacyapp17" xml:space="preserve">
+    <value>Değişiklikler</value>
+  </data>
+  <data name="privacyapp18" xml:space="preserve">
+    <value>Uygulama, bu Gizlilik Politikasını zaman zaman güncelleyebilir. Güncellenmiş Gizlilik Politikasına erişmek için kullanıcıların Uygulama’yı düzenli olarak kontrol etmeleri önerilir. Kullanıcıların Uygulama’yı kullanmaya devam etmeleri, güncellenmiş Gizlilik Politikasını kabul ettikleri anlamına gelir.</value>
+  </data>
+  <data name="privacyapp19" xml:space="preserve">
+    <value>İletişim</value>
+  </data>
+  <data name="privacyapp2" xml:space="preserve">
+    <value>Kişisel Bilgilerin Toplanması ve Kullanımı</value>
+  </data>
+  <data name="privacyapp20" xml:space="preserve">
+    <value>Bu Gizlilik Politikası ile ilgili sorularınız veya endişeleriniz varsa, lütfen bize e-posta gönderin: hwdiecasttr@gmail.com</value>
+  </data>
+  <data name="privacyapp21" xml:space="preserve">
+    <value>Sonuç olarak, Uygulama, kullanıcılarının gizliliğini korumak için çaba gösterir ve kullanıcıların kişisel bilgilerini yalnızca burada açıklanan amaçlar doğrultusunda toplar ve kullanır. Kullanıcıların Uygulama’yı kullanırken kişisel bilgilerinin güvenliğini sağlamak için gerekli önlemleri almaları önerilir.</value>
+  </data>
+  <data name="privacyapp3" xml:space="preserve">
+    <value>Uygulama, kullanıcıların model araba koleksiyonlarını kaydetmek için gereken bilgileri toplar. Bu bilgiler, e-posta adresi, şifresi ve model arabaların fotoğrafları gibi kişisel bilgileri içerebilir. Kullanıcıların bu bilgileri sağlaması tamamen gönüllüdür ve Uygulama, bu bilgileri yalnızca kullanıcının model arabalarını saklamak ve yönetmek amacıyla kullanır. Uygulama, kullanıcıların kişisel bilgilerini üçüncü taraflarla paylaşmayacaktır.</value>
+  </data>
+  <data name="privacyapp4" xml:space="preserve">
+    <value>Kamera İzni</value>
+  </data>
+  <data name="privacyapp5" xml:space="preserve">
+    <value>Uygulama, model araba fotoğraflarını kaydetmek için kullanıcılardan kamera izni isteyebilir. Kullanıcıların çekilen fotoğrafları herhangi bir yere gönderilmez, yalnızca kullanıcının kendi cihazındaki Uygulama veritabanına kaydedilir.</value>
+  </data>
+  <data name="privacyapp6" xml:space="preserve">
+    <value>Giriş Bilgileri</value>
+  </data>
+  <data name="privacyapp7" xml:space="preserve">
+    <value>Uygulama, kullanıcıların Uygulama’ya giriş yapması için e-posta adresi ve şifre talep edebilir. Bu bilgiler, Firebase sitesinde kaydedilir ve uygulama geliştiricilerinin şifrelere erişimi mümkün değildir.</value>
+  </data>
+  <data name="privacyapp8" xml:space="preserve">
+    <value>Veri Depolama</value>
+  </data>
+  <data name="privacyapp9" xml:space="preserve">
+    <value>Kullanıcıların model araba verileri, Uygulama’nın yüklendiği telefonda kaydedilir. Bu veriler,  kullanıcının cihazının güvenliği ve gizliliği için korunur ve herhangi bir yere gönderilmez.</value>
+  </data>
+  <data name="red1" xml:space="preserve">
+    <value>Hot Wheels Redlines, 1968 ile 1977 yılları arasında üretilmiş olan efsanevi oyuncak araç serisidir.  Bu dönem, Hot Wheels'in en eski ve en değerli modellerinden biri olarak kabul edilir ve koleksiyoncular arasında büyük ilgi görür. "Redlines" adı, bu dönemdeki lastiklerin kırmızı çizgilerle süslenmesinden gelir.</value>
+  </data>
+  <data name="red2" xml:space="preserve">
+    <value>Hot Wheels Redlines, ilk olarak 1968 yılında Mattel tarafından piyasaya sürüldü ve otomotiv tasarımı uzmanı Elliot Handler ve ekibi tarafından tasarlandı. Orijinal serideki araçlar, dökme metal gövdeleri, hareketli tekerlekleri ve gerçekçi tasarımlarıyla dikkat çekti. Ayrıca, araçların altında bir dizi dikenli metal çıkıntı bulunuyordu, bu sayede araçlar Hot Wheels pistlerinde daha hızlı ve daha düzgün bir şekilde ilerleyebiliyordu.</value>
+  </data>
+  <data name="red3" xml:space="preserve">
+    <value>Redlines dönemi, otomobil endüstrisindeki gerçek modellerden ilham alan geniş bir araç yelpazesini içeriyordu. Klasik muscle car'lar, spor arabalar, kamyonlar, itfaiye araçları ve daha birçok farklı model üretildi. Her yıl yeni modeller ekleniyor ve önceki modellerin bazı renk ve tasarım varyasyonları yapılıyordu.</value>
+  </data>
+  <data name="red4" xml:space="preserve">
+    <value>Hot Wheels Redlines, dönemin özellikleri ve nadirliği nedeniyle koleksiyoncular arasında oldukça değerlidir. İyi korunmuş ve orijinal ambalajında olan nadir Redlines modelleri, oyuncak koleksiyoncuları tarafından yüksek fiyatlarla alınıp satılmaktadır. Bu efsanevi dönem, Hot Wheels'in başarısının temellerini atmış ve oyuncak araç dünyasında bir ikon haline gelmiştir.</value>
+  </data>
+  <data name="renk" xml:space="preserve">
+    <value>Renk</value>
+  </data>
+  <data name="sari" xml:space="preserve">
+    <value>Sarı</value>
+  </data>
+  <data name="sayfa" xml:space="preserve">
+    <value>Sayfa</value>
+  </data>
+  <data name="sblue" xml:space="preserve">
+    <value>Spektrum Mavisi</value>
+  </data>
+  <data name="seri" xml:space="preserve">
+    <value>Seri</value>
+  </data>
+  <data name="sgold" xml:space="preserve">
+    <value>Spektrum Altını</value>
+  </data>
+  <data name="siku1" xml:space="preserve">
+    <value>Siku, 1921 yılında Almanya'da kurulan ünlü oyuncak araç markasıdır. Adını "Siku" kelimesi, Almanca'da "küçük oyuncak araç" anlamına gelen "Spielzeugauto" kelimesinin kısaltılmasıyla oluşmuştur. Siku, özellikle kaliteli metal döküm oyuncak araçları ile tanınır ve çocuklar için gerçek hayattaki araçları minyatür versiyonları olarak sunar.</value>
+  </data>
+  <data name="siku2" xml:space="preserve">
+    <value>Başlangıçta tarım araçları ve diğer iş makineleri ile ilgili oyuncaklar üreten Siku, zamanla otomobiller, kamyonlar, otobüsler, inşaat araçları, ambulanslar, itfaiye araçları gibi çeşitli taşıtları içeren geniş bir ürün yelpazesine sahip oldu. Siku oyuncakları, gerçekçi detaylar, dayanıklılık ve hassas döküm teknikleri ile dikkat çeker.</value>
+  </data>
+  <data name="siku3" xml:space="preserve">
+    <value>Siku, çocuklar ve oyuncak koleksiyoncuları için popüler bir marka olmuştur. Yıllar içinde ürün çeşitliliğini artırmış ve özel temalı seriler, lisanslı araçlar ve çeşitli ölçeklerde modeller sunmuştur.  Ayrıca, Siku oyuncakları, çocukların hayal gücünü ve oyun becerilerini destekleyerek eğlenceli ve öğretici bir oyun deneyimi sağlar.</value>
+  </data>
+  <data name="siku4" xml:space="preserve">
+    <value>Siku, Almanya merkezli bir marka olmasına rağmen dünya çapında tanınmaktadır ve oyuncak araç  sektöründe uzun yıllardır önemli bir oyuncu olarak faaliyet göstermektedir.</value>
+  </data>
+  <data name="sikubilgi" xml:space="preserve">
+    <value>Siku, Almanya merkezli oyuncak araba markasıdır ve 1950'lerden beri araba tutkunlarının vazgeçilmez tercihlerinden biri olmuştur. Siku, metal döküm araçlarıyla tanınır ve gerçekçi tasarımı ile ön plana çıkar. Traktörlerden inşaat makinelerine, hafif ticari araçlardan spor arabalara kadar geniş bir ürün yelpazesi sunar. Kusursuz kalite ve detaylar, Siku'nun öne çıkan özelliklerindendir. Ayrıca, çeşitli ölçeklerdeki modelleri ve lisanslı araçları ile koleksiyoncuların ve oyuncak meraklılarının gözdesi olmaya devam ediyor. Siku, mühendislik becerilerini, eğlenceyi ve öğrenmeyi bir araya getiren kaliteli oyuncaklar sunarak araba tutkusunu yaşatıyor.</value>
+  </data>
+  <data name="sikulist" xml:space="preserve">
+    <value>Siku Listesi</value>
+  </data>
+  <data name="sikuveritabani" xml:space="preserve">
+    <value>Siku Veritabanı</value>
+  </data>
+  <data name="siyah" xml:space="preserve">
+    <value>Siyah</value>
+  </data>
+  <data name="smor" xml:space="preserve">
+    <value>Spektrum Mor</value>
+  </data>
+  <data name="sorange" xml:space="preserve">
+    <value>Spektrum Turuncusu</value>
+  </data>
+  <data name="sosyalmedya" xml:space="preserve">
+    <value>Sosyal Medya</value>
+  </data>
+  <data name="sred" xml:space="preserve">
+    <value>Spektrum Kırmızısı</value>
+  </data>
+  <data name="sthlist" xml:space="preserve">
+    <value>HW Super Treasure Hunt Listesi</value>
+  </data>
+  <data name="tan" xml:space="preserve">
+    <value>Ten Rengi</value>
+  </data>
+  <data name="tarih" xml:space="preserve">
+    <value>Yazılma Tarihi:</value>
+  </data>
+  <data name="thunt1" xml:space="preserve">
+    <value>1995 Treasure Hunt Serileri</value>
+  </data>
+  <data name="thunt10" xml:space="preserve">
+    <value>2011: Yılda 30 Model İle Artış - 15 TH ve 15 STH</value>
+  </data>
+  <data name="thunt11" xml:space="preserve">
+    <value>Treasure Hunt ve Super Treasure Hunt modelleri yılda 15'e çıkarıldı. Bir kasa (karışım) başına bir yeni model, A'dan Q'ya kadar harf sırasıyla sıralandırılarak üretilir. I ve O harfleri kullanılmaz çünkü bir ve sıfırı  hatırlatırlar. Toplamda 15 harfle sıralanan bu modellerden biri "normal" (gizli) Treasure Hunt, diğeri ise  her 12 kasadan birinde çıkan Super Treasure Hunt modelidir.</value>
+  </data>
+  <data name="thunt12" xml:space="preserve">
+    <value>2007 - 2011: Aynı Model Super ve Regular (Normal) T-Huntlar</value>
+  </data>
+  <data name="thunt13" xml:space="preserve">
+    <value>Beş yıl boyunca, Treasure Hunt ve Super Treasure Hunt aynı model araçtı. İkisini ayırt etmenin birkaç yolu vardı, örneğin SUPER'de Spectraflame boya ve Real Rider lastikleri bulunurdu. Bu beş yıllık dönem boyunca, süper treasure hunt modelleri "Trea$ure Hunt$" şeklinde dolar işareti ile işaretlenmiştir.</value>
+  </data>
+  <data name="thunt14" xml:space="preserve">
+    <value>Hot Wheels kartlarında yeşil şerit kullanımı sona erdi ve Treasure Hunt ve Super Treasure Hunt  modelleri arasında farklı modeller kullanılmaya başlandı. 2012 Super Treasure Hunt modellerinin üzerinde "TH" grafikleri bulunuyordu.</value>
+  </data>
+  <data name="thunt15" xml:space="preserve">
+    <value>Normal treasure hunt modelleri hala kartın üzerinde yeşil şerit ve "treasure hunt '12" yazısıyla yitirdiği görüşündeydi.</value>
+  </data>
+  <data name="thunt16" xml:space="preserve">
+    <value>2013 yılında, normal treasure hunt kartlarında yeşil şerit kullanımı sona erdi ve araçların üzerinde bir yerde alev sembolünü gösteren bir daire eklenmeye başlandı. Normal treasure hunt serisindeki lisanslı gerçek araçlar azalmaya başladı. Öte yandan, 2013 Super Treasure Hunt modelleri, birçok harika lisanslı araca sahipti!</value>
+  </data>
+  <data name="thunt17" xml:space="preserve">
+    <value>2014 yılında, bazı ABD sürümleri, "Bu sembol, aracın nadir ve yüksek koleksiyon değerine sahip olduğunu belirtir." ifadesini taşıyordu.</value>
+  </data>
+  <data name="thunt18" xml:space="preserve">
+    <value>2016 yılında, ifade "Tebrikler! Bu sembol, nadir bir hazine avı aracı bulduğunuzu gösterir!" şeklinde değiştirildi. T-Hunt için kartın altında gümüş bir alev logosu bulunurken, Super Treasure Hunt modelleri altın bir logo ile işaretlenmiştir.</value>
+  </data>
+  <data name="thunt19" xml:space="preserve">
+    <value>Alev daire sembolü hem araç üzerinde hem de kartın arka tarafında yer alırken, Gümüş sembol normal Treasure Hunt, altın sembol ise Super Treasure Hunt modelini belirtir.</value>
+  </data>
+  <data name="thunt2" xml:space="preserve">
+    <value>1995 Yılında Treasure Hunt Tanıtıldı Treasure Hunt (bazen T-Hunt olarak da adlandırılır), Mattel tarafından 1995 yılında yetişkin koleksiyoncular için tanıtılan Hot Wheels serisidir. Ayda bir defa veya benzeri bir sıklıkla yayımlanan 12 araçtan oluşmaktaydı ve 2011 yılına kadar devam etti. Orijinal üretim adedi dünya genelinde her bir araç için 10.000 adetti; bu sayı Hot Wheels'in koleksiyonerler tarafından aranan bir ürün olarak giderek artan talebi nedeniyle zamanla yükseldi.</value>
+  </data>
+  <data name="thunt3" xml:space="preserve">
+    <value>1997 - 1999: Plastik Tekerlekler</value>
+  </data>
+  <data name="thunt4" xml:space="preserve">
+    <value>Plastik tekerlekler - 1997 - 1999 yıllarında üretilen tüm Treasure Hunt modelleri plastik tekerleklerle yapılmıştır.</value>
+  </data>
+  <data name="thunt5" xml:space="preserve">
+    <value>2000: Gerçek Lastikler (Real Riders) Geri Döndü</value>
+  </data>
+  <data name="thunt6" xml:space="preserve">
+    <value>2005: Treasure Hunt'in 10. Yılı</value>
+  </data>
+  <data name="thunt7" xml:space="preserve">
+    <value>2007: Super Treasure Hunt'ların İlk Yılı</value>
+  </data>
+  <data name="thunt8" xml:space="preserve">
+    <value>2007 yılında, Mattel iki katlı bir Treasure Hunt sistemini tanıttı. Normal bir Treasure Hunt modeli, diğer Hot Wheels araçları gibi normal boyalı ve normal plastik tekerleklerle gelir. Bu modellerin üretimi, bir kasanın içindeki önceki T-Hunt modellerine göre daha fazla olacağı söylenmektedir.</value>
+  </data>
+  <data name="thunt9" xml:space="preserve">
+    <value>Yeni "Super" Treasure Hunt modelleri ise bulması çok daha zordur, 12 ila 13 kasadan birinde çıkar. Bir Super  Treasure Hunt modeli, premium gerçek lastikli ve Spectraflame boya ile gelir. Birçok Hot Wheels koleksiyoncusu son yıllarda ABD Basic kasalarında (karışımlarda) Super Treasure Hunt modellerinin, Uluslararası Kasalarda (Karışımlarda) olduğundan daha muhtemel olduğunu fark etmiştir.</value>
+  </data>
+  <data name="turuncu" xml:space="preserve">
+    <value>Turuncu</value>
+  </data>
+  <data name="uretimyil" xml:space="preserve">
+    <value>Yılı</value>
+  </data>
+  <data name="veritabani" xml:space="preserve">
+    <value>Veritabanı</value>
+  </data>
+  <data name="yazar" xml:space="preserve">
+    <value>Yazar:</value>
+  </data>
+  <data name="yesil" xml:space="preserve">
+    <value>Yeşil</value>
+  </data>
+  <data name="yil" xml:space="preserve">
+    <value>Yıl</value>
+  </data>
+  <data name="zamac" xml:space="preserve">
+    <value>Zamac</value>
+  </data>
+</root>

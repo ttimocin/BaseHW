@@ -1,0 +1,49 @@
+﻿@model BaseHW.Models.DTO.HwListVm
+@{
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+
+
+}
+
+<main id="main" class="main">
+
+<div class="tbl-container">
+    <h2>Hot Wheels</h2>
+
+    <table>
+        <tr>
+            <th>Model Adı</th>
+            <th>Üretim Yılı</th>
+            <th>Renk</th>
+            <th>Fotoğraf</th>
+            <th>Seri</th>
+            <th>Director</th>
+            <th>Aksiyon</th>
+
+        </tr>
+        @foreach (var item in Model.HwList)
+        {
+        <tr>
+            <td>@item.Title</td>
+                <td>@item.HwyearNames</td>
+            <td>@item.Renk</td>
+                <td><img style="height:60px;width:80px" src="/Uploads/@item.Image" /></td>
+                <td>@item.Seri</td>
+            <td>@item.Director</td>
+
+            <td>
+                    <a href="/Hw/Edit?id=@item.Id" class="btn btn-default"><i class="fa fa-edit"></i></a>
+                    <a onclick="return window.confirm('Emin misiniz?')" href="/Hw/Delete?id=@item.Id" class="btn btn-danger"><i class="fa fa-trash"></i></a>
+
+            
+            </td>
+        </tr>
+        }
+    </table>
+    <div class="input-container">
+        <a href="/Hw/Add" class="btn btn-sec">Geri</a>
+    </div>
+</div>
+
+
+</main>

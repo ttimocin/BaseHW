@@ -1,0 +1,700 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="1hafta" xml:space="preserve">
+    <value>Week 1</value>
+  </data>
+  <data name="2022list" xml:space="preserve">
+    <value>2022 Hot Wheels Car List</value>
+  </data>
+  <data name="2023list" xml:space="preserve">
+    <value>2023 Hot Wheels Car List</value>
+  </data>
+  <data name="aboutus1" xml:space="preserve">
+    <value>We are here as a team that offers a website and mobile application specially designed for model cars and their collectors. We aim for passionate collectors to come together in the world of model cars and share their experiences together.</value>
+  </data>
+  <data name="aboutus2" xml:space="preserve">
+    <value>Our vision is to capture the excitement and magic of model cars, helping car enthusiasts organize their collections and keep track of their precious pieces. With the services we offer on our site and mobile application, we aim to offer a unique experience to car enthusiasts.</value>
+  </data>
+  <data name="aboutus3" xml:space="preserve">
+    <value>We offer a large database on our website, especially for Siku brand cars. We allow Siku collectors to discover their favorite models and create their own collections. We also keep records of valuable parts for our users who are also interested in Hot Wheels vehicles. You can search for the tools you want, check their features and add them to your collection.</value>
+  </data>
+  <data name="aboutus4" xml:space="preserve">
+    <value>Our mobile application, on the other hand, allows users to transport their model car collections. Users who download the application can easily save cars in their collection,
+can upload photos and add notes. So they always have their collections with them.
+they can carry and share with their friends.</value>
+  </data>
+  <data name="aboutus5" xml:space="preserve">
+    <value>As a team, we are constantly working to improve the experience of our users. on our site and
+We strive to add more brands and models in our app, provide user-friendly features and encourage communication between collectors.</value>
+  </data>
+  <data name="aboutus6" xml:space="preserve">
+    <value>We invite anyone interested in model cars to join our community and share their passion.
+Visit our site, download our mobile app and enjoy the fascinating world of model cars.
+dive in.</value>
+  </data>
+  <data name="aboutus7" xml:space="preserve">
+    <value>We wish you days full of passion for cars!</value>
+  </data>
+  <data name="aboutus8" xml:space="preserve">
+    <value>BaseHW.net Team</value>
+  </data>
+  <data name="altin" xml:space="preserve">
+    <value>Gold</value>
+  </data>
+  <data name="anasayfa" xml:space="preserve">
+    <value>HOMEPAGE</value>
+  </data>
+  <data name="arama" xml:space="preserve">
+    <value>Search</value>
+  </data>
+  <data name="base1" xml:space="preserve">
+    <value>What does Hot Wheels "Base Codes" mean?</value>
+  </data>
+  <data name="base2" xml:space="preserve">
+    <value>Beginning in 2008, Mattel puts the date of manufacture on the underside of Hot Wheels and Matchbox vehicles. Added a code system that shows This system was called "Base Code". Base Code, vehicle
+It consists of a combination that indicates the year it was produced and the week in which it was produced.</value>
+  </data>
+  <data name="base3" xml:space="preserve">
+    <value>The first character of the Base Code begins with a letter representing the year the vehicle was manufactured, followed by numbers indicating which week of the year of manufacture the vehicle was produced. For example, if a base code is "B30", it indicates that this vehicle was manufactured in week 30 of 2009. Similarly, the "P41" base code means it was produced in week 41 of 2021.</value>
+  </data>
+  <data name="base4" xml:space="preserve">
+    <value>As an important note, "I", "O" and "Q" are not used between letters. In this way, date codes become clearer and more understandable.</value>
+  </data>
+  <data name="base5" xml:space="preserve">
+    <value>This base code system is an invaluable source of information for collectors to identify and track production dates of vehicles.</value>
+  </data>
+  <data name="base6" xml:space="preserve">
+    <value>Letter</value>
+  </data>
+  <data name="base7" xml:space="preserve">
+    <value>Year</value>
+  </data>
+  <data name="beyaz" xml:space="preserve">
+    <value>White</value>
+  </data>
+  <data name="bilgibankasi" xml:space="preserve">
+    <value>Info Center</value>
+  </data>
+  <data name="black1" xml:space="preserve">
+    <value>Hot Wheels Blackwalls era, 1977, when Mattel significantly redesigned the Hot Wheels lineup
+ It refers to the period between 1988 and 1988. During this time, black walls were used instead of the red lines on the wheels of Hot Wheels cars, giving the cars a more stylish and modern look.</value>
+  </data>
+  <data name="black2" xml:space="preserve">
+    <value>The era of Blackwalls saw a shift with a focus on more realistic designs and authenticity, with manufacturers like Ferrari, Porsche, and Lamborghini launching a variety of car models inspired by real-life vehicles. This emphasis on realism appealed to an older collector and fan base with an interest in Blackwalls era cars with their detailed designs and high-quality builds.</value>
+  </data>
+  <data name="black3" xml:space="preserve">
+    <value>Alongside the new black walls, the Blackwalls era also introduced the use of chrome-plated plastic in some car parts, a new plastic windshield design, and a wider range of body styles and paint schemes.</value>
+  </data>
+  <data name="black4" xml:space="preserve">
+    <value>Popular with collectors and fans, the era of Blackwalls ended in 1989 with the start of the Hot Wheels Blue Card era, when more detailed and realistic cars were offered with tires as well as other advanced features. But still, the Blackwalls era remains an important period in Hot Wheels' history, and many collectors still take an interest in and value these classic cars today.</value>
+  </data>
+  <data name="blue1" xml:space="preserve">
+    <value>Hot Wheels Blue Cards refers to the line of Hot Wheels cars produced by Mattel from 1989 to 1994. Also referred to by some as the "Collector Number" era. Blue Cards was a redesign of Hot Wheels packaging that was previously available in yellow and red packaging for over 20 years.</value>
+  </data>
+  <data name="blue2" xml:space="preserve">
+    <value>The Blue Card era was characterized by a blue and silver packaging and design with a more modern look. The packaging also contained a clear plastic blister pack that allowed collectors to see inside the car without removing it from the package.</value>
+  </data>
+  <data name="blue3" xml:space="preserve">
+    <value>Alongside the new packaging design, the Blue Card era introduced more detailed and realistic designs to the Hot Wheels lineup, as well as new features such as working suspensions and opening doors.</value>
+  </data>
+  <data name="blue4" xml:space="preserve">
+    <value>Despite the popularity of the Blue Card era among collectors, it ended in 1995 with the introduction of the Hot Wheels Treasure Hunt series. In this new series, even more detailed and highly collectible cars were featured with unique paint schemes and designs.</value>
+  </data>
+  <data name="blue5" xml:space="preserve">
+    <value>Today, Hot Wheels Blue Karts remain popular with collectors and fans alike, with many looking for rare and hard-to-find models from this era. While the Blue Card era isn't as nostalgic as earlier eras like Redlines or Blackwalls, it remains an important period in Hot Wheels' history and is a valuable part of serious collector's collections.</value>
+  </data>
+  <data name="bordo" xml:space="preserve">
+    <value>Maroon</value>
+  </data>
+  <data name="bronz" xml:space="preserve">
+    <value>Bronze</value>
+  </data>
+  <data name="card1" xml:space="preserve">
+    <value>What do the Hot Wheels "Long Card" and "Short Card" mean?</value>
+  </data>
+  <data name="card2" xml:space="preserve">
+    <value>Hot wheels cartons are sold short in Europe and long in America. Some special series vehicles come to Europe as long cards. However, mainline tools called regular come as short cards.</value>
+  </data>
+  <data name="case1" xml:space="preserve">
+    <value>What does Hot Wheels "Case Letters" mean?</value>
+  </data>
+  <data name="case2" xml:space="preserve">
+    <value>Hot Wheels boxes have some codes on them. Capital letters I and O are not used because they remind one and zero. The 15 main serial letters per year are:</value>
+  </data>
+  <data name="case3" xml:space="preserve">
+    <value>A, B, C, D, E, F, G, H, J, K, L, M, N, P and Q.</value>
+  </data>
+  <data name="case4" xml:space="preserve">
+    <value>Hot Wheels main series boxes contain 72 vehicles. US boxes begin with "2593-", International cases begin with "C4982-". All major series boxes include one Treasure Hunt model, but Super Treasure Hunt is not guaranteed in every box. Super Treasure Hunt models are thought to debut in an estimated one in a thousand vehicles or one in fourteen boxes.</value>
+  </data>
+  <data name="case5" xml:space="preserve">
+    <value>International Hot Wheels box code - box with D Case</value>
+  </data>
+  <data name="case6" xml:space="preserve">
+    <value>American Hot Wheels box code - box with K Case</value>
+  </data>
+  <data name="color" xml:space="preserve">
+    <value>Color</value>
+  </data>
+  <data name="contact1" xml:space="preserve">
+    <value>You can reach us via e-mail for all your opinions, questions and suggestions:</value>
+  </data>
+  <data name="contact2" xml:space="preserve">
+    <value>We look forward to your feedback!</value>
+  </data>
+  <data name="copy1" xml:space="preserve">
+    <value>Copyright Notice</value>
+  </data>
+  <data name="copy10" xml:space="preserve">
+    <value>Your copyright infringement notice will be reviewed, and the necessary action will be taken, such as removing or modifying the content if required.</value>
+  </data>
+  <data name="copy11" xml:space="preserve">
+    <value>Please refrain from unauthorized copying or using any content from our website. Otherwise, we reserve the right to enforce our legal rights.</value>
+  </data>
+  <data name="copy12" xml:space="preserve">
+    <value>Best regards,</value>
+  </data>
+  <data name="copy2" xml:space="preserve">
+    <value>Dear Visitor,</value>
+  </data>
+  <data name="copy3" xml:space="preserve">
+    <value>Thank you for visiting our website. The information and images shared on our website have been carefully prepared and curated by us. All contents are protected by applicable copyright and other intellectual property rights.</value>
+  </data>
+  <data name="copy4" xml:space="preserve">
+    <value>On this page, we commit to respecting intellectual property rights and cooperating with you through a method created to address copyright infringements. If you believe that any of the images or information on our website violate your copyrights, please contact us at the address provided below:</value>
+  </data>
+  <data name="copy5" xml:space="preserve">
+    <value>Copyright Infringement Notification Address:</value>
+  </data>
+  <data name="copy6" xml:space="preserve">
+    <value>Please send an email including the following information:</value>
+  </data>
+  <data name="copy7" xml:space="preserve">
+    <value>1- A clear and detailed description of the content you believe infringes your copyright,</value>
+  </data>
+  <data name="copy8" xml:space="preserve">
+    <value>2- The URL or page link where the relevant content is located,</value>
+  </data>
+  <data name="copy9" xml:space="preserve">
+    <value>3- Documents or other supporting evidence to verify your copyright ownership.</value>
+  </data>
+  <data name="destek" xml:space="preserve">
+    <value>Support</value>
+  </data>
+  <data name="dmavi" xml:space="preserve">
+    <value>Teal</value>
+  </data>
+  <data name="eposta" xml:space="preserve">
+    <value>Email</value>
+  </data>
+  <data name="etiket" xml:space="preserve">
+    <value>Tags</value>
+  </data>
+  <data name="fotog" xml:space="preserve">
+    <value>Image</value>
+  </data>
+  <data name="geri" xml:space="preserve">
+    <value>Back</value>
+  </data>
+  <data name="geridon" xml:space="preserve">
+    <value>Go Back</value>
+  </data>
+  <data name="gri" xml:space="preserve">
+    <value>Gray</value>
+  </data>
+  <data name="gumus" xml:space="preserve">
+    <value>Silver</value>
+  </data>
+  <data name="hakkimizda" xml:space="preserve">
+    <value>About Us</value>
+  </data>
+  <data name="hosgeldiniz" xml:space="preserve">
+    <value>Welcome</value>
+  </data>
+  <data name="hotwheelsbilgi" xml:space="preserve">
+    <value>Hot Wheels is one of the leading brands in the world of toy cars. Introduced by Mattel in 1968, Hot Wheels has won the hearts of children and collectors with its design and performance-focused toy cars. Its vibrant colors, stunning designs of both licensed vehicles and original models, captivate car enthusiasts of all ages. Additionally, with race tracks and playsets, it provides players with fun and competitive moments. Hot Wheels offers an entertaining journey into the world of cars, promoting creativity and imagination.</value>
+  </data>
+  <data name="hwkutuliste" xml:space="preserve">
+    <value>Hw Case List</value>
+  </data>
+  <data name="iletisim" xml:space="preserve">
+    <value>CONTACT</value>
+  </data>
+  <data name="iletisimkisa" xml:space="preserve">
+    <value>Contact</value>
+  </data>
+  <data name="image" xml:space="preserve">
+    <value>Image</value>
+  </data>
+  <data name="inci" xml:space="preserve">
+    <value>Pearl</value>
+  </data>
+  <data name="info" xml:space="preserve">
+    <value>INFO</value>
+  </data>
+  <data name="info1" xml:space="preserve">
+    <value>About Hot Wheels</value>
+  </data>
+  <data name="info10" xml:space="preserve">
+    <value>HW Car List by Case</value>
+  </data>
+  <data name="info2" xml:space="preserve">
+    <value>Base Codes</value>
+  </data>
+  <data name="info3" xml:space="preserve">
+    <value>Case Letters</value>
+  </data>
+  <data name="info4" xml:space="preserve">
+    <value>Long Card - Short Card</value>
+  </data>
+  <data name="info5" xml:space="preserve">
+    <value>HW Treasure Hunt Series</value>
+  </data>
+  <data name="info6" xml:space="preserve">
+    <value>Treasure Hunts History - 1995</value>
+  </data>
+  <data name="info7" xml:space="preserve">
+    <value>History of Super Treasure Hunt - 2007</value>
+  </data>
+  <data name="info8" xml:space="preserve">
+    <value>Matchbox Chase List</value>
+  </data>
+  <data name="info9" xml:space="preserve">
+    <value>Matchbox 2021-2023 Chase List</value>
+  </data>
+  <data name="infokucuk" xml:space="preserve">
+    <value>Info</value>
+  </data>
+  <data name="infos" xml:space="preserve">
+    <value>Info</value>
+  </data>
+  <data name="kapat" xml:space="preserve">
+    <value>Close</value>
+  </data>
+  <data name="kirmizi" xml:space="preserve">
+    <value>Red</value>
+  </data>
+  <data name="krem" xml:space="preserve">
+    <value>Cream</value>
+  </data>
+  <data name="kum" xml:space="preserve">
+    <value>Sand</value>
+  </data>
+  <data name="kutu" xml:space="preserve">
+    <value>Case Letter</value>
+  </data>
+  <data name="kutukodliste" xml:space="preserve">
+    <value>List by box codes</value>
+  </data>
+  <data name="language" xml:space="preserve">
+    <value>DİL</value>
+  </data>
+  <data name="matchboxbilgi" xml:space="preserve">
+    <value>Matchbox is a longstanding and iconic brand in the world of toy cars. Introduced by Lesney Products in 1953, Matchbox enriched the imaginations of children by producing miniature replicas of real-life vehicles. With realistic details, durable construction, and a wide range of model options, Matchbox has been cherished by car enthusiasts for many years, finding a place in their collections. When it comes to toy cars, Matchbox is one of the first brands that come to mind, representing a nostalgic passion that remains timeless.</value>
+  </data>
+  <data name="matchboxlist" xml:space="preserve">
+    <value>Matchbox SuperChase Listesi</value>
+  </data>
+  <data name="mavi" xml:space="preserve">
+    <value>Blue</value>
+  </data>
+  <data name="model" xml:space="preserve">
+    <value>Model Name</value>
+  </data>
+  <data name="modeladi" xml:space="preserve">
+    <value>Model Name</value>
+  </data>
+  <data name="mor" xml:space="preserve">
+    <value>Purple</value>
+  </data>
+  <data name="olcek" xml:space="preserve">
+    <value>Scale</value>
+  </data>
+  <data name="ozellik" xml:space="preserve">
+    <value>Special</value>
+  </data>
+  <data name="pembe" xml:space="preserve">
+    <value>Pink</value>
+  </data>
+  <data name="populargonderi" xml:space="preserve">
+    <value>Popular Posts</value>
+  </data>
+  <data name="privacy" xml:space="preserve">
+    <value>Privacy Policy</value>
+  </data>
+  <data name="privacy1" xml:space="preserve">
+    <value>This privacy policy describes information about your access and use of the website at BaseHw.net. We respect your privacy and are committed to protecting the privacy of your personal data.</value>
+  </data>
+  <data name="privacy10" xml:space="preserve">
+    <value>Privacy Policy Updates</value>
+  </data>
+  <data name="privacy11" xml:space="preserve">
+    <value>Gizlilik politikamızı zaman zaman güncelleyebiliriz. Herhangi bir güncelleme yaparsak,
+değişikliklerin sitemizde duyurulmasını sağlayacağız. Bu sayede, hangi bilgilerin toplandığı,
+nasıl kullanıldığı ve hangi koşullarda ifşa edildiği hakkında bilgilendirileceksiniz.</value>
+  </data>
+  <data name="privacy12" xml:space="preserve">
+    <value>If you have any questions about our privacy policy, please contact us at hwdiecasttr@gmail.com
+contact.</value>
+  </data>
+  <data name="privacy2" xml:space="preserve">
+    <value>Information Collected.</value>
+  </data>
+  <data name="privacy3" xml:space="preserve">
+    <value>As BaseHw.Net, we do not collect any personal information when you visit our site.</value>
+  </data>
+  <data name="privacy4" xml:space="preserve">
+    <value>Cookies</value>
+  </data>
+  <data name="privacy5" xml:space="preserve">
+    <value>Cookies are used on our site. Cookies are small text files placed on the user's computer or mobile device of the website. Cookies are used to make the site more user-friendly, remember user preferences and monitor the performance of our site. Cookies do not collect your personal information and do not violate your privacy. You can refuse to accept cookies in your browser's settings, but in this case you may not be able to fully use some features of our site.</value>
+  </data>
+  <data name="privacy6" xml:space="preserve">
+    <value>Information in Databases</value>
+  </data>
+  <data name="privacy7" xml:space="preserve">
+    <value>Hot wheels, siku and other brand model car information in the databases on our site It is provided for users to research. This information, our users, When they visit the site, they can view and research. Membership on our site. We do not collect or store your personal information.</value>
+  </data>
+  <data name="privacy8" xml:space="preserve">
+    <value>Links to Other Websites</value>
+  </data>
+  <data name="privacy9" xml:space="preserve">
+    <value>Our site may contain links to other websites. These links are additional to the user.
+provided to provide information. With the privacy practices of the linked websites
+We are not responsible for it. When using links, the targeted website
+We recommend that you review the privacy policy.</value>
+  </data>
+  <data name="privacyapp1" xml:space="preserve">
+    <value>This Privacy Policy explains how we protect the privacy of users of the BaseHW mobile application (hereinafter referred to as the “Application”). The application undertakes to protect the personal information of its users and collects and uses this information only for the purposes described here.</value>
+  </data>
+  <data name="privacyapp10" xml:space="preserve">
+    <value>Cookies</value>
+  </data>
+  <data name="privacyapp11" xml:space="preserve">
+    <value>The application may place cookies on users' devices. Cookies are used to analyze the usage of the Application, to provide a better experience to users and to measure the usage of the Application. Users can disable or refuse cookies, but in this case some functions of the Application may not work.</value>
+  </data>
+  <data name="privacyapp12" xml:space="preserve">
+    <value>Security</value>
+  </data>
+  <data name="privacyapp13" xml:space="preserve">
+    <value>The application takes the necessary measures for the security of the personal information of the users. If the Application needs to ensure the security of sensitive information such as photos of users' model cars, the Application takes the necessary measures for the security of users' personal information. The application takes appropriate technical and managerial security measures to ensure the security of sensitive information such as photos of users' model cars. These include data encryption, secure server and database access, and regular security testing.</value>
+  </data>
+  <data name="privacyapp14" xml:space="preserve">
+    <value>The app does not knowingly collect personal information of children. However, we recommend that children under the age of 13 do not use this App without parental or guardian consent.</value>
+  </data>
+  <data name="privacyapp15" xml:space="preserve">
+    <value>Data Retention Period</value>
+  </data>
+  <data name="privacyapp16" xml:space="preserve">
+    <value>The Application may delete the information about the model cars of the users in accordance with the user's request or the automatic deletion policies determined by the Application for their deletion after a certain period of time. Users can apply to the Application at any time when they wish to delete their account.</value>
+  </data>
+  <data name="privacyapp17" xml:space="preserve">
+    <value>Changes</value>
+  </data>
+  <data name="privacyapp18" xml:space="preserve">
+    <value>The App may update this Privacy Policy from time to time. Users are advised to check the App regularly to access the updated Privacy Policy. Users' continued use of the Application means that they accept the updated Privacy Policy.</value>
+  </data>
+  <data name="privacyapp19" xml:space="preserve">
+    <value>Contact</value>
+  </data>
+  <data name="privacyapp2" xml:space="preserve">
+    <value>Collection and Use of Personal Information</value>
+  </data>
+  <data name="privacyapp20" xml:space="preserve">
+    <value>If you have questions or concerns regarding this Privacy Policy, please email us: hwdiecasttr@gmail.com</value>
+  </data>
+  <data name="privacyapp21" xml:space="preserve">
+    <value>As a result, the Application strives to protect the privacy of its users and collects and uses users' personal information only for the purposes described here. It is recommended that users take the necessary precautions to ensure the security of their personal information while using the Application.</value>
+  </data>
+  <data name="privacyapp3" xml:space="preserve">
+    <value>The application collects the information users need to save their model car collections. This information may include personal information such as e-mail address, password and photos of model cars. Users' provision of this information is entirely voluntary and the App uses this information only for the purpose of storing and managing the user's model cars. The application will not share users' personal information with third parties.</value>
+  </data>
+  <data name="privacyapp4" xml:space="preserve">
+    <value>Camera Permission</value>
+  </data>
+  <data name="privacyapp5" xml:space="preserve">
+    <value>The app may ask users for camera permission to save model car photos. Users' captured photos are not sent anywhere, they are only saved in the Application database on the user's own device.</value>
+  </data>
+  <data name="privacyapp6" xml:space="preserve">
+    <value>Login information</value>
+  </data>
+  <data name="privacyapp7" xml:space="preserve">
+    <value>The Application may request an e-mail address and password for users to log into the Application. This information is saved on the Firebase site and app developers do not have access to passwords.</value>
+  </data>
+  <data name="privacyapp8" xml:space="preserve">
+    <value>Data Storage</value>
+  </data>
+  <data name="privacyapp9" xml:space="preserve">
+    <value>Users' model car data is saved on the phone where the App is installed. This data is protected for the security and privacy of the user's device and is not sent anywhere.</value>
+  </data>
+  <data name="red1" xml:space="preserve">
+    <value>Hot Wheels Redlines is a legendary line of toy vehicles produced between 1968 and 1977. This period is considered one of the oldest and most valuable models of Hot Wheels and is of great interest among collectors. The name "Redlines" comes from the fact that tires from this period were decorated with red stripes.</value>
+  </data>
+  <data name="red2" xml:space="preserve">
+    <value>Hot Wheels Redlines was originally released by Mattel in 1968 and was designed by automotive design expert Elliot Handler and his team. The vehicles in the original series drew attention with their cast metal bodies, moving wheels and realistic designs. Also, underneath the vehicles were a series of barbed metal protrusions so vehicles could go faster and smoother on Hot Wheels tracks.</value>
+  </data>
+  <data name="red3" xml:space="preserve">
+    <value>The era of Redlines included a wide range of vehicles inspired by real models in the auto industry. Classic muscle cars, sports cars, trucks, fire trucks and many more different models were produced. New models were added every year, and some color and design variations were made from previous models.</value>
+  </data>
+  <data name="red4" xml:space="preserve">
+    <value>Hot Wheels Redlines are highly prized among collectors for their era's features and rarity. Rare Redlines models, well preserved and in their original packaging, are traded at high prices by toy collectors. This legendary era laid the foundation for Hot Wheels' success and has become an icon in the toy vehicle world.</value>
+  </data>
+  <data name="renk" xml:space="preserve">
+    <value>Color</value>
+  </data>
+  <data name="sari" xml:space="preserve">
+    <value>Yellow</value>
+  </data>
+  <data name="sayfa" xml:space="preserve">
+    <value>Page</value>
+  </data>
+  <data name="sblue" xml:space="preserve">
+    <value>Spectraflame Blue</value>
+  </data>
+  <data name="seri" xml:space="preserve">
+    <value>Series</value>
+  </data>
+  <data name="sgold" xml:space="preserve">
+    <value>Spectraflame Gold</value>
+  </data>
+  <data name="siku1" xml:space="preserve">
+    <value>Siku is a famous toy vehicle brand founded in Germany in 1921. Its name is derived from the word "Siku", a shortening of the German word "Spielzeugauto" meaning "small toy vehicle". Siku is particularly known for its quality die-cast metal toy vehicles and offers miniature versions of real-life vehicles for children.</value>
+  </data>
+  <data name="siku2" xml:space="preserve">
+    <value>Initially producing toys related to agricultural vehicles and other construction machinery, Siku gradually expanded into a wide range of vehicles including automobiles, trucks, buses, construction vehicles, ambulances, fire trucks. Siku toys attract attention with realistic details, durability and precision casting techniques.</value>
+  </data>
+  <data name="siku3" xml:space="preserve">
+    <value>Siku has been a popular brand for children and toy collectors. Over the years, it has increased its product range and offered special themed series, licensed vehicles and models of various scales. In addition, Siku toys provide a fun and educational play experience by supporting children's imagination and play skills.</value>
+  </data>
+  <data name="siku4" xml:space="preserve">
+    <value>Although Siku is a Germany-based brand, it is recognized worldwide and has been a major player in the toy vehicle industry for many years.</value>
+  </data>
+  <data name="sikubilgi" xml:space="preserve">
+    <value>Siku is a German-based toy car brand that has been a favorite choice among car enthusiasts since the 1950s. Siku is known for its die-cast vehicles and stands out with its realistic designs. From tractors to construction machinery, light commercial vehicles to sports cars, Siku offers a broad range of products. Flawless quality and attention to detail are among Siku's distinguishing features. Moreover, with various scales of models and licensed vehicles, it continues to be a favorite of collectors and toy enthusiasts. Siku nurtures the passion for cars by offering quality toys that combine engineering skills, fun, and learning.</value>
+  </data>
+  <data name="sikulist" xml:space="preserve">
+    <value>Siku List</value>
+  </data>
+  <data name="sikuveritabani" xml:space="preserve">
+    <value>Siku Database</value>
+  </data>
+  <data name="siyah" xml:space="preserve">
+    <value>Black</value>
+  </data>
+  <data name="smor" xml:space="preserve">
+    <value>Spectraflame Purple</value>
+  </data>
+  <data name="sorange" xml:space="preserve">
+    <value>Spectraflame Orange</value>
+  </data>
+  <data name="sosyalmedya" xml:space="preserve">
+    <value>Social Media</value>
+  </data>
+  <data name="sred" xml:space="preserve">
+    <value>Spectraflame Red</value>
+  </data>
+  <data name="sthlist" xml:space="preserve">
+    <value>HW Super Treasure Hunt List</value>
+  </data>
+  <data name="tan" xml:space="preserve">
+    <value>Tan</value>
+  </data>
+  <data name="tarih" xml:space="preserve">
+    <value>Created Date:</value>
+  </data>
+  <data name="thunt1" xml:space="preserve">
+    <value>1995 Treasure Hunt Series</value>
+  </data>
+  <data name="thunt10" xml:space="preserve">
+    <value>2011: Increase by 30 Models per Year - 15 TH and 15 STH</value>
+  </data>
+  <data name="thunt11" xml:space="preserve">
+    <value>The Treasure Hunt and Super Treasure Hunt models have been increased to 15 per year. One new model per case (mixture) is produced in alphabetical order from A to Q. The letters I and O are not used because they remind one and zero. Listed with 15 letters in total, one of these models is the "normal" (hidden) Treasure Hunt, and the other is the Super Treasure Hunt model, which comes out in one of every 12 cases.</value>
+  </data>
+  <data name="thunt12" xml:space="preserve">
+    <value>2007 - 2011: Same Model Super and Regular T-Hunts</value>
+  </data>
+  <data name="thunt13" xml:space="preserve">
+    <value>For five years, Treasure Hunt and Super Treasure Hunt were the same model vehicle. There were several ways to distinguish the two, for example the SUPER had Spectraflame paint and Real Rider tires. During this five-year period, super treasure hunt models are marked with a dollar sign "Trea$ure Hunt$".</value>
+  </data>
+  <data name="thunt14" xml:space="preserve">
+    <value>The use of green stripes on Hot Wheels cards has ended, and different models have been used between the Treasure Hunt and Super Treasure Hunt models. The 2012 Super Treasure Hunt models had "TH" graphics on them.</value>
+  </data>
+  <data name="thunt15" xml:space="preserve">
+    <value>Normal treasure hunt models were still of the opinion that the card had lost it with the green stripe and "treasure hunt '12" written on it.</value>
+  </data>
+  <data name="thunt16" xml:space="preserve">
+    <value>In 2013, the green stripe was discontinued on regular treasure hunt cards, and a circle showing the flame symbol was added somewhere above the vehicles. Licensed real vehicles in the normal treasure hunt series are starting to dwindle. The 2013 Super Treasure Hunt models, on the other hand, had lots of great licensed vehicles!</value>
+  </data>
+  <data name="thunt17" xml:space="preserve">
+    <value>In 2014, some US editions stated, "This symbol indicates that the vehicle is rare and of high collectible value." had the expression.</value>
+  </data>
+  <data name="thunt18" xml:space="preserve">
+    <value>In 2016, the phrase "Congratulations! This symbol indicates that you have found a rare treasure hunting tool!" changed to . The T-Hunt has a silver flame logo at the bottom of the card, while the Super Treasure Hunt models are marked with a gold logo.</value>
+  </data>
+  <data name="thunt19" xml:space="preserve">
+    <value>The flame circle symbol is located both on the vehicle and on the back of the card, while the Silver symbol indicates the regular Treasure Hunt, and the gold symbol indicates the Super Treasure Hunt.</value>
+  </data>
+  <data name="thunt2" xml:space="preserve">
+    <value>Treasure Hunt Introduced in 1995 Treasure Hunt (sometimes called T-Hunt) is the Hot Wheels line of Mattel introduced in 1995 for adult collectors. It consisted of 12 vehicles released once a month or with a similar frequency and continued until 2011. The original production quantity was 10,000 for each vehicle worldwide; this number has increased over time due to Hot Wheels' growing demand as a sought-after collector's item.</value>
+  </data>
+  <data name="thunt3" xml:space="preserve">
+    <value>1997 - 1999: Plastic Wheels</value>
+  </data>
+  <data name="thunt4" xml:space="preserve">
+    <value>Plastic wheels - All Treasure Hunt models produced in 1997 - 1999 are made with plastic wheels.</value>
+  </data>
+  <data name="thunt5" xml:space="preserve">
+    <value>2000: Real Riders are Back</value>
+  </data>
+  <data name="thunt6" xml:space="preserve">
+    <value>2005: 10th Anniversary of Treasure Hunt</value>
+  </data>
+  <data name="thunt7" xml:space="preserve">
+    <value>2007: First Year of Super Treasure Hunts</value>
+  </data>
+  <data name="thunt8" xml:space="preserve">
+    <value>In 2007, Mattel introduced a two-deck Treasure Hunt system. A regular Treasure Hunt model comes with normal painted and normal plastic wheels like other Hot Wheels vehicles. It is said that the production of these models will be more than previous T-Hunt models in a case.</value>
+  </data>
+  <data name="thunt9" xml:space="preserve">
+    <value>The new "Super" Treasure Hunt models are much harder to find, spawning in one of 12 to 13 crates. A Super Treasure Hunt model comes with premium real tires and Spectraflame paint. Many Hot Wheels collectors have noticed in recent years that Super Treasure Hunt models are more likely in US Basic cases (mixtures) than in International Cases (Mixes).</value>
+  </data>
+  <data name="turuncu" xml:space="preserve">
+    <value>Orange</value>
+  </data>
+  <data name="uretimyil" xml:space="preserve">
+    <value>Production Year</value>
+  </data>
+  <data name="veritabani" xml:space="preserve">
+    <value>Database</value>
+  </data>
+  <data name="yazar" xml:space="preserve">
+    <value>Author:</value>
+  </data>
+  <data name="yesil" xml:space="preserve">
+    <value>Green</value>
+  </data>
+  <data name="yil" xml:space="preserve">
+    <value>Year</value>
+  </data>
+  <data name="zamac" xml:space="preserve">
+    <value>Zamac</value>
+  </data>
+</root>

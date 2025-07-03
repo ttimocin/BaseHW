@@ -1,0 +1,410 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8201505636469020"
+            crossorigin="anonymous"></script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Tablo</title>
+    <style>
+
+
+        .container {
+            display: flex;
+            margin: 60px; /* Sol ve sağdan en az 60px içerde olacak */
+            padding: 30px;
+        }
+
+        .left-section {
+            display: flex;
+            flex-direction: column;
+            flex: 70%;
+            text-align: justify;
+            margin-right: 30px;
+        }
+
+        .right-section {
+            flex: 30%;
+            padding-left: 40px; /* Sağ tarafta içerikten 20px içerde olacak */
+        }
+
+            .right-section p {
+                margin-bottom: 20px;
+            }
+
+        .table-container {
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            overflow: hidden;
+            margin-top: 20px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+
+        thead th {
+            background-color: #f2f2f2;
+        }
+
+        tbody tr:hover {
+            background-color: #f5f5f5;
+        }
+
+        img {
+            max-width: 50px;
+        }
+
+        #searchContainer {
+            padding: 10px;
+        }
+
+        #searchInput {
+            width: 200px;
+            padding: 10px;
+        }
+
+        /* Mobile responsive styles */
+        @@media screen and (max-width: 768px) {
+            .container {
+                flex-direction: column;
+                margin: 20px; /* Sol ve sağdan en az 60px içerde olacak */
+            }
+
+            .left-section {
+                margin-right: 0px;
+            }
+
+            .right-section {
+                padding-left: 0px; /* Sağ tarafta içerikten 20px içerde olacak */
+            }
+
+            .table-container {
+                overflow-x: auto;
+            }
+
+            table {
+                table-layout: fixed;
+                width: 100%;
+            }
+
+            .responsive-menu {
+                display: none;
+            }
+
+                .responsive-menu.open {
+                    display: table-row-group;
+                }
+
+                .responsive-menu th,
+                .responsive-menu td {
+                    display: table-cell;
+                    width: 33.33%;
+                    box-sizing: border-box;
+                }
+
+                    .responsive-menu th:first-child::after {
+                        content: ' *';
+                    }
+
+                .responsive-menu tr:not(:first-child) {
+                    display: none;
+                }
+
+                .responsive-menu tr.open {
+                    display: table-row;
+                }
+        }
+
+        .button-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+            justify-content: center;
+        }
+
+            .button-container .button {
+                background-color: #4CAF50;
+                color: white;
+                padding: 5px 10px;
+                border: none;
+                cursor: pointer;
+                border-radius: 3px;
+                font-size: 13px;
+                text-decoration: none;
+                text-align: center;
+            }
+
+                .button-container .button a {
+                    align-items: center;
+                }
+
+    </style>
+</head>
+<body>
+  <div class="container">
+        <div class="left-section">
+
+
+            <div class="geri" style="float:left">
+                <a href="/info/">Info</a> » <a href="/hwcase/index">HwCase</a>»
+            </div>
+    <div id="searchContainer">
+      <input type="text" id="searchInput" placeholder="Arama yap...">
+    </div>
+    <div class="table-container">
+      <table id="dataTable">
+        <thead>
+          <tr>
+                        <th>@_localization.Getkey("yil").Value</th>
+                        <th>@_localization.Getkey("model").Value</th>
+                        <th>@_localization.Getkey("kutu").Value</th>
+                        <th class="responsive-menu">@_localization.Getkey("color").Value</th>
+                        <th class="responsive-menu">@_localization.Getkey("ozellik").Value</th>
+
+          </tr>
+        </thead>
+                <tbody style="background-color:white">
+
+                    <tr>
+                        <td>2023</td>
+                        <td>Renault Sport R.S. 01</td>
+                        <td>F</td>
+
+                        <td class="responsive-menu">@_localization.Getkey("kirmizi").Value</td>
+                        <td class="responsive-menu">Super Treasure Hunt</td>
+                    </tr>
+                    <tr>
+                        <td>2023</td>
+                        <td>McLaren Elva</td>
+                        <td>F</td>
+
+                        <td class="responsive-menu">@_localization.Getkey("kirmizi").Value</td>
+                        <td class="responsive-menu">Target Exclusive</td>
+                    </tr>
+                    <tr>
+                        <td>2023</td>
+                        <td>'67 Jeepster Commando</td>
+                        <td>F</td>
+
+                        <td class="responsive-menu">@_localization.Getkey("beyaz").Value</td>
+                        <td class="responsive-menu">Target Exclusive</td>
+                    </tr>
+                    <tr>
+                        <td>2023</td>
+                        <td>1986 Toyota Van</td>
+                        <td>F</td>
+
+                        <td class="responsive-menu">@_localization.Getkey("siyah").Value</td>
+                        <td class="responsive-menu">Target Exclusive</td>
+                    </tr>
+                    <tr>
+                        <td>2023</td>
+                        <td>Donut Drifter</td>
+                        <td>F</td>
+
+                        <td class="responsive-menu">@_localization.Getkey("pembe").Value</td>
+                        <td class="responsive-menu">Treasure Hunt</td>
+                    </tr>
+                    <tr>
+                        <td>2023</td>
+                        <td>LB Super Silhouette Nissan Silvia (S15)</td>
+                        <td>F</td>
+
+                        <td class="responsive-menu">@_localization.Getkey("altin").Value</td>
+                        <td class="responsive-menu"></td>
+                    </tr>
+                    <tr>
+                        <td>2023</td>
+                        <td>Porsche 911 Carrera RS 2.7</td>
+                        <td>F</td>
+
+                        <td class="responsive-menu">@_localization.Getkey("beyaz").Value</td>
+                        <td class="responsive-menu"></td>
+                    </tr>
+                    <tr>
+                        <td>2023</td>
+                        <td>Renault Sport R.S. 01</td>
+                        <td>F</td>
+
+                        <td class="responsive-menu">@_localization.Getkey("kirmizi").Value</td>
+                        <td class="responsive-menu"></td>
+                    </tr>
+                    <tr>
+                        <td>2023</td>
+                        <td>'72 Stingray Convertible</td>
+                        <td>F</td>
+
+                        <td class="responsive-menu">@_localization.Getkey("mavi").Value</td>
+                        <td class="responsive-menu"></td>
+                    </tr>
+                    <tr>
+                        <td>2023</td>
+                        <td>Subaru WRX STI</td>
+                        <td>F</td>
+
+                        <td class="responsive-menu">@_localization.Getkey("beyaz").Value</td>
+                        <td class="responsive-menu"></td>
+                    </tr>
+                    <tr>
+                        <td>2023</td>
+                        <td>AUDI '90 Quattro</td>
+                        <td>F</td>
+
+                        <td class="responsive-menu">@_localization.Getkey("beyaz").Value</td>
+                        <td class="responsive-menu"></td>
+                    </tr>
+                    <tr>
+                        <td>2023</td>
+                        <td>'86 Ford Thunderbird Pro Stock</td>
+                        <td>F</td>
+
+                        <td class="responsive-menu">@_localization.Getkey("mavi").Value</td>
+                        <td class="responsive-menu"></td>
+                    </tr>
+                    <tr>
+                        <td>2023</td>
+                        <td>DMC Delorean</td>
+                        <td>F</td>
+
+                        <td class="responsive-menu">@_localization.Getkey("mavi").Value</td>
+                        <td class="responsive-menu"></td>
+                    </tr>
+                    <tr>
+                        <td>2023</td>
+                        <td>'15 Mazda MX-5 Miata</td>
+                        <td>F</td>
+
+                        <td class="responsive-menu">@_localization.Getkey("siyah").Value</td>
+                        <td class="responsive-menu"></td>
+                    </tr>
+                    <tr>
+                        <td>2023</td>
+                        <td>2017 Camaro ZL1</td>
+                        <td>F</td>
+
+                        <td class="responsive-menu">@_localization.Getkey("sari").Value</td>
+                        <td class="responsive-menu"></td>
+                    </tr>
+                    <tr>
+                        <td>2023</td>
+                        <td>70s Van</td>
+                        <td>F</td>
+
+                        <td class="responsive-menu">@_localization.Getkey("siyah").Value</td>
+                        <td class="responsive-menu"></td>
+                    </tr>
+                    <tr>
+                        <td>2023</td>
+                        <td>2018 Bentley Continental GT3</td>
+                        <td>F</td>
+
+                        <td class="responsive-menu">@_localization.Getkey("gri").Value</td>
+                        <td class="responsive-menu"></td>
+                    </tr>
+                    <tr>
+                        <td>2023</td>
+                        <td>Draggin' Wagon</td>
+                        <td>F</td>
+
+                        <td class="responsive-menu">@_localization.Getkey("mavi").Value</td>
+                        <td class="responsive-menu"></td>
+                    </tr>
+                    <tr>
+                        <td>2023</td>
+                        <td>Ford Escort RS2000</td>
+                        <td>F</td>
+
+                        <td class="responsive-menu">@_localization.Getkey("kirmizi").Value</td>
+                        <td class="responsive-menu"></td>
+                    </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+        <div class="right-section">
+            <h4 style="text-align:center">@_localization.Getkey("info1").Value</h4>
+            <div class="button-container">
+
+                <a href="/info/basecode" class="button">@_localization.Getkey("info2").Value</a>
+                <a href="/info/caseletters" class="button">@_localization.Getkey("info3").Value</a>
+                <a href="/info/longshortcard" class="button">@_localization.Getkey("info4").Value</a>
+                <a href="/info/siku" class="button">Siku</a>
+
+            </div>
+            <h4 style="text-align:center">@_localization.Getkey("info5").Value</h4>
+
+            <div class="button-container">
+
+                <a href="/info/redlines" class="button">Hot Wheels Redlines 1968 - 1976</a>
+                <a href="/info/blackwall77" class="button">Hot Wheels Blackwalls Era 1977 - 1988</a>
+                <a href="/info/bluecard89" class="button">Hot Wheels Blue Card Era 1989 - 1994</a>
+                <a href="/info/thunt" class="button">@_localization.Getkey("info6").Value</a>
+                <a href="/SuperTreauserHunt/index" class="button">@_localization.Getkey("info7").Value</a>
+
+            </div>
+            <h4 style="text-align:center">@_localization.Getkey("info8").Value</h4>
+
+            <div class="button-container">
+
+                <a href="/MatchboxSuperChase/index" class="button">@_localization.Getkey("info9").Value</a>
+
+            </div>
+
+            <h4 style="text-align:center">@_localization.Getkey("info10").Value</h4>
+
+            <div class="button-container">
+
+                <a href="/hwcase/index" class="button">2023 Case Letter</a>
+
+            </div>
+        </div>
+
+    </div>
+
+  <script>
+    const searchInput = document.getElementById('searchInput');
+    const dataTable = document.getElementById('dataTable');
+
+    searchInput.addEventListener('input', function () {
+      const searchText = searchInput.value.toLowerCase();
+      const rows = dataTable.getElementsByTagName('tr');
+
+      for (let i = 1; i < rows.length; i++) { // 0. satır başlık olduğu için 1'den başlıyoruz.
+        const row = rows[i];
+        const cells = row.getElementsByTagName('td');
+        let rowVisible = false;
+
+        for (let j = 0; j < cells.length; j++) {
+          const cell = cells[j];
+
+          if (cell.textContent.toLowerCase().includes(searchText)) {
+            rowVisible = true;
+            break;
+          }
+        }
+
+        row.style.display = rowVisible ? '' : 'none';
+      }
+    });
+
+    const responsiveMenuHeaders = dataTable.querySelectorAll('.responsive-menu th:first-child');
+    responsiveMenuHeaders.forEach(header => {
+      header.addEventListener('click', () => {
+        const parentRow = header.parentNode;
+        parentRow.classList.toggle('open');
+      });
+    });
+  </script>
+</body>
+</html>

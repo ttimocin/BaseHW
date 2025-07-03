@@ -1,0 +1,81 @@
+﻿
+@{
+    ViewData["Title"] = "Contact";
+
+}
+
+
+
+<head>
+
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8201505636469020"
+            crossorigin="anonymous"></script>
+    <style>
+        .top {
+            margin-left: 150px;
+            margin-right: 150px;
+            margin-top: 25px;
+            margin-bottom: 20px;
+        }
+
+        @@media (max-width: 920px) {
+            .top {
+                margin-left: 90px;
+                margin-right: 90px;
+                margin-top: 30px;
+                margin-bottom: 15px;
+            }
+        }
+
+        @@media (max-width: 600px) {
+            .top {
+                margin-left: 50px;
+                margin-right: 50px;
+                margin-top: 15px;
+                margin-bottom: 9px;
+            }
+
+
+            @@media (max-width: 480px) {
+                .top {
+                    margin-left: 10px;
+                    margin-right: 10px;
+                    margin-top: 10px;
+                    margin-bottom: 5px;
+                }
+            }
+
+    </style>
+</head>
+
+<header class="w3-container w3-center w3-padding-32">
+</header>
+
+
+<div class="top">
+
+    <div class="w3-card-4 w3-margin w3-white">
+
+        <!-- Header -->
+
+        <div class="w3-container">
+
+
+            <h3><b>@_localization.Getkey("iletisim").Value</b></h3>
+        </div>
+
+        <div class="w3-container">
+            <p>@_localization.Getkey("contact1").Value</p>
+            <p>@_localization.Getkey("eposta").Value: <b>hwdiecasttr@gmail.com</b></p>
+            <p>@_localization.Getkey("contact2").Value</p>
+            <p>@_localization.Getkey("aboutus8").Value</p>
+        </div>
+    </div>
+
+</div>
+
+
+
+
+
+

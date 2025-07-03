@@ -1,0 +1,62 @@
+﻿@model BaseHW.Models.Domain.Sikuyear
+@{
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+
+}
+
+<main id="main" class="main">
+
+    <div class="container-fluid">
+        <div class="card">
+
+<form class="w-40" asp-action="Update" method="post">
+                <div class="card-header bg-primary mb-1">
+                    <h4 class="card-title text-white">
+                        Üretim Yılını Güncelle
+                    </h4>
+                </div>
+
+                <div class="card-body">
+
+        <input type="hidden" class="input" asp-for="Id">
+
+    <div class="input-container">
+        <label asp-for="SikuyearName" class="w-40">SikuyearName</label>
+        <input type="text" class="input" asp-for="SikuyearName">
+
+    </div>
+
+    <div class="message-box pd-x-28 error">
+        <span asp-validation-for="SikuyearName"></span>
+    </div>
+
+    @if (TempData["msg"] != null)
+    {
+        <div class="alert mb-1">
+            @TempData["msg"]
+        </div>
+    }
+
+    <div class="input-container">
+                        <button class="btn btn-primary" type="submit">Kaydet</button>
+                        <a class="btn btn-primary" href="/SikuYear/SikuyearList ">Tüm Kayıtlar</a>
+    </div>
+                </div>
+
+</form>
+        </div>
+    </div>
+</main>
+
+@section Scripts{
+    <partial name="_ValidationScriptsPartial" />
+    <script>
+        $(".custom-file").on("change", function () {
+            var fileName = $(this).val().split("\\").pop();
+            $(this).siblings(".custom-file-label").addClass("selected").html(fileName);
+            document.getElementById('thumbnail').src = window.URL.createObjectURL(this.files[0])
+        });
+
+    </script>
+
+    }

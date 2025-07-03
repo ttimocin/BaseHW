@@ -1,0 +1,316 @@
+﻿@{
+    ViewData["Title"] = "Basecode";
+
+   }
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8201505636469020"
+            crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobil Responsive Tasarım</title>
+    <style>
+
+        table {
+            width: 50%;
+            border-collapse: collapse;
+            margin: 20px auto;
+            max-width: 350px;
+            font-family: Arial, sans-serif;
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: center;
+            border: 1px solid #ddd;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        tr:hover {
+            background-color: #f5f5f5;
+        }
+
+        .container {
+            display: flex;
+            margin: 60px; /* Sol ve sağdan en az 60px içerde olacak */
+            padding: 30px;
+        }
+
+        .left-section {
+            display: flex;
+            flex-direction: column;
+            flex: 70%;
+            text-align: justify;
+            margin-right: 30px;
+        }
+
+        .right-section {
+            flex: 30%;
+            padding-left: 40px; /* Sağ tarafta içerikten 20px içerde olacak */
+        }
+
+        .nav-button {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 5px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .right-section p {
+            margin-bottom: 20px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        td {
+            border: 1px solid #ccc;
+            padding: 8px;
+        }
+
+        .container .left-section img {
+            width: 500px;
+            height: auto;
+            text-align: center;
+        }
+
+        .container .left-section table {
+            float: left;
+        }
+
+        /* Mobil responsive stil ayarları */
+        @@media screen and (max-width: 768px) {
+            .container {
+                flex-direction: column;
+                padding: 1px;
+                margin: 30px;
+            }
+
+            .right-section {
+                padding-left: 0; /* Sol tarafta içerikten 0px içerde olacak */
+                margin-top: 20px; /* Yukarı boşluk 20px olacak */
+            }
+
+            .container .left-section table {
+                float: left;
+            }
+
+            .container .left-section h3 {
+                margin-top: 30px;            
+            }
+
+            .container .left-section .geri {
+                margin-top: 30px;
+            }
+
+            .container .left-section img {
+                width: 300px;
+                height: auto;
+                text-align: center;
+            }
+        }
+
+
+        .button-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+            justify-content: center;
+        }
+
+            .button-container .button {
+                background-color: #4CAF50;
+                color: white;
+                padding: 5px 10px;
+                border: none;
+                cursor: pointer;
+                border-radius: 3px;
+                font-size: 13px;
+                text-decoration: none;
+                text-align: center;
+            }
+
+                .button-container .button a {
+                    align-items: center;
+                }
+
+
+    </style>
+
+</head>
+<body>
+    <div class="container">
+        <div class="left-section">
+            <div class="geri" style="float:left">
+                <a href="/info/">@_localization.Getkey("infokucuk").Value</a> »
+            </div>
+
+            <h3><b>@_localization.Getkey("base1").Value</b></h3>
+            <p>@_localization.Getkey("base2").Value</p>
+            <p>@_localization.Getkey("base3").Value</p>
+            <p>@_localization.Getkey("base4").Value</p>
+            <p>@_localization.Getkey("base5").Value</p>
+            <div class="table">
+
+            <table>
+                <tr>
+                    <th><p>@_localization.Getkey("base6").Value</p></th>
+                    <th><p>@_localization.Getkey("base7").Value</p></th>
+                </tr>
+                <tr>
+                    <td>A</td>
+                    <td>2008</td>
+                </tr>
+                <tr>
+                    <td>B</td>
+                    <td>2009</td>
+                </tr>
+                <tr>
+                    <td>C</td>
+                    <td>2010</td>
+                </tr>
+                <tr>
+                    <td>D</td>
+                    <td>2011</td>
+                </tr>
+                <tr>
+                    <td>E</td>
+                    <td>2012</td>
+                </tr>
+                <tr>
+                    <td>F</td>
+                    <td>2013</td>
+                </tr>
+                <tr>
+                    <td>G</td>
+                    <td>2014</td>
+                </tr>
+                <tr>
+                    <td>H</td>
+                    <td>2015</td>
+                </tr>
+                <tr>
+                    <td>J</td>
+                    <td>2016</td>
+                </tr>
+                <tr>
+                    <td>K</td>
+                    <td>2017</td>
+                </tr>
+                <tr>
+                    <td>L</td>
+                    <td>2018</td>
+                </tr>
+                <tr>
+                    <td>M</td>
+                    <td>2019</td>
+                </tr>
+                </table>
+                    <table>
+                <tr>
+                    <th><p>@_localization.Getkey("base6").Value</p></th>
+                    <th><p>@_localization.Getkey("base7").Value</p></th>
+                </tr>
+              
+              
+                <tr>
+                    <td>N</td>
+                    <td>2020</td>
+                </tr>
+                <tr>
+                    <td>P</td>
+                    <td>2021</td>
+                </tr>
+                <tr>
+                    <td>R</td>
+                    <td>2022</td>
+                </tr>
+                <tr>
+                    <td>S</td>
+                    <td>2023</td>
+                </tr>
+                <tr>
+                    <td>T</td>
+                    <td>2024</td>
+                </tr>
+                <tr>
+                    <td>U</td>
+                    <td>2025</td>
+                </tr>
+                <tr>
+                    <td>V</td>
+                    <td>2026</td>
+                </tr>
+                <tr>
+                    <td>W</td>
+                    <td>2027</td>
+                </tr>
+                <tr>
+                    <td>X</td>
+                    <td>2028</td>
+                </tr>
+                <tr>
+                    <td>Y</td>
+                    <td>2029</td>
+                </tr>
+                <tr>
+                    <td>Z</td>
+                    <td>2030</td>
+                </tr>
+            </table>
+            </div>
+            <img src="/images/info/product.jpg"/>
+            <p>R: 2022, 01: @_localization.Getkey("1hafta").Value</p>
+        </div>
+        <div class="right-section">
+            <h4 style="text-align:center">@_localization.Getkey("info1").Value</h4>
+            <div class="button-container">
+
+                <a href="/info/basecode" class="button">@_localization.Getkey("info2").Value</a>
+                <a href="/info/caseletters" class="button">@_localization.Getkey("info3").Value</a>
+                <a href="/info/longshortcard" class="button">@_localization.Getkey("info4").Value</a>
+                <a href="/info/siku" class="button">Siku</a>
+
+            </div>
+            <h4 style="text-align:center">@_localization.Getkey("info5").Value</h4>
+
+            <div class="button-container">
+
+                <a href="/info/redlines" class="button">Hot Wheels Redlines 1968 - 1976</a>
+                <a href="/info/blackwall77" class="button">Hot Wheels Blackwalls Era 1977 - 1988</a>
+                <a href="/info/bluecard89" class="button">Hot Wheels Blue Card Era 1989 - 1994</a>
+                <a href="/info/thunt" class="button">@_localization.Getkey("info6").Value</a>
+                <a href="/SuperTreauserHunt/index" class="button">@_localization.Getkey("info7").Value</a>
+
+            </div>
+            <h4 style="text-align:center">@_localization.Getkey("info8").Value</h4>
+
+            <div class="button-container">
+
+                <a href="/MatchboxSuperChase/index" class="button">@_localization.Getkey("info9").Value</a>
+                <h4 style="text-align:center">@_localization.Getkey("info10").Value</h4>
+
+                <div class="button-container">
+
+                    <a href="/hwcase/index" class="button">2023 Case Letter</a>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,294 @@
+﻿@{
+    Layout = "_Layout";
+    ViewData["Title"] = "Super Treasure Hunt";
+}
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8201505636469020"
+            crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card Gallery</title>
+    <style>
+        .container {
+            display: flex;
+            margin: 60px; /* Sol ve sağdan en az 60px içerde olacak */
+            padding: 30px;
+        }
+
+        .left-section {
+            display: flex;
+            flex-direction: column;
+            flex: 70%;
+            text-align: justify;
+            margin-right: 30px;
+        }
+
+        .cards {
+        }
+
+        .right-section {
+            flex: 30%;
+            padding-left: 40px; /* Sağ tarafta içerikten 20px içerde olacak */
+        }
+
+            .right-section p {
+                margin-bottom: 20px;
+            }
+
+        .card-container {
+            width: calc(25% - 20px); /* %25 genişlik, 20px aralık */
+            max-width: 200px; /* Kartların maksimum genişliği */
+            background-color: #f5f5f5;
+            border-radius: 10px;
+            height: 380px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            padding: 30px;
+            margin-bottom: 20px; /* Altta boşluk ekleyelim */
+            margin-left: 40px;
+            float: left;
+        }
+
+
+        a {
+            text-decoration: none;
+        }
+
+        .container .left-section .cards {
+        }
+
+        .card-container img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+
+        .card-container h2 {
+            margin-top: 10px;
+            font-size: 20px;
+        }
+
+        .title2 {
+            font-weight: bold;
+            width: 100%; /* Başlığı genişliğe sığdıralım */
+            text-align: center; /* Başlığı ortala */
+            margin-bottom: 20px; /* Başlığın altında boşluk bırakalım */
+        }
+
+        .title {
+            font-weight: bold;
+            font-size: 20px;
+            width: 70%; /* Başlığı genişliğe sığdıralım */
+            text-align: left; /* Başlığı ortala */
+            margin-bottom: 20px; /* Başlığın altında boşluk bırakalım */
+            margin-top: 40px;
+        }
+
+        .button-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+            justify-content: center;
+        }
+
+            .button-container .button {
+                background-color: #4CAF50;
+                color: white;
+                padding: 5px 10px;
+                border: none;
+                cursor: pointer;
+                border-radius: 3px;
+                font-size: 13px;
+                text-decoration: none;
+                text-align: center;
+            }
+
+                .button-container .button a {
+                    align-items: center;
+                }
+
+        @@media screen and (max-width: 992px) {
+            .card-container {
+                width: calc(43.33% - 40px);
+                height: 350px;
+                margin-left: 10px;
+            }
+
+            .container {
+                flex-direction: column;
+            }
+
+
+            .title2 {
+                font-size: 17px;
+            }
+        }
+
+        @@media screen and (max-width: 768px) {
+            .card-container {
+                width: calc(60% - 40px);
+                height: 370px;
+                margin-left: 10px;
+            }
+
+            .title2 {
+                font-size: 17px;
+            }
+
+            .container {
+                flex-direction: column;
+            }
+
+            .right-section {
+                padding-left: 0; /* Sol tarafta içerikten 0px içerde olacak */
+                margin-top: 20px; /* Yukarı boşluk 20px olacak */
+            }
+        }
+
+        @@media screen and (max-width: 480px) {
+            .card-container {
+                width: 100%;
+                height: 350px;
+                margin-left: 10px;
+            }
+
+            .title2 {
+                font-size: 17px;
+            }
+        }
+
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="left-section">
+            <div class="geri" style="float:left">
+                <a href="/info/">@_localization.Getkey("infokucuk").Value</a> »
+                <a href="/SuperTreauserHunt/index/">Super T-Hunts</a> »
+            </div>
+
+            <h1 class="title2">Hot Wheels Super Treauser Hunt - 2007</h1>
+            <div class="cards">
+
+                <div class="card-container">
+                    <img src="/images/sth/sth2011/tucker.jpg" alt="2023 SHELBY COBRA 427 S/C">
+                    <h2>Tucker Torpedo</h2>
+                </div>
+                <div class="card-container">
+                    <img src="/images/sth/sth2011/57chevy.jpg" alt="2023 '64 BUICK RIVIERA">
+                    <h2>’57 Chevy</h2>
+                </div>
+                <div class="card-container">
+                    <img src="/images/sth/sth2011/58impala.jpg" alt="2023 '96 CHEVY IMPALA SS™">
+                    <h2>’58 Impala</h2>
+                </div>
+                <div class="card-container">
+                    <img src="/images/sth/sth2011/62chevy.jpg" alt="2023 2018 HONDA CIVIC TYPE R">
+                    <h2>Custom ’62 Chevy</h2>
+                </div>
+                <div class="card-container">
+                    <img src="/images/sth/sth2011/studebaker.jpg" alt="2023 ’83 CHEVY SILVERADO 4X4">
+                    <h2>Studebaker Avanti</h2>
+                </div>
+                <div class="card-container">
+                    <img src="/images/sth/sth2011/63tbird.jpg" alt="2023 '68 CHEVY® NOVA™">
+                    <h2>’63 T-Bird</h2>
+                </div>
+                <div class="card-container">
+                    <img src="/images/sth/sth2011/pontiac.jpg" alt="2023 ’82 PONTIAC® FIREBIRD™">
+                    <h2>’64 Pontiac GTO</h2>
+                </div>
+                <div class="card-container">
+                    <img src="/images/sth/sth2011/68olds.jpg" alt="2023 2020 JEEP® GLADIATOR">
+                    <h2>’68 Olds 442</h2>
+                </div>
+                <div class="card-container">
+                    <img src="/images/sth/sth2011/corvette.jpg" alt="2023 JAGUAR® F-TYPE R">
+                    <h2>Corvette Grand Sport</h2>
+                </div>
+                <div class="card-container">
+                    <img src="/images/sth/sth2011/mustang.jpg" alt="2023 '69 DODGE CHARGER">
+                    <h2>’71 Mustang Funny Car</h2>
+                </div>
+                <div class="card-container">
+                    <img src="/images/sth/sth2011/buick.jpg" alt="2023 '57 CHEVY® BEL AIR® GASSER">
+                    <h2>’71 Buick Riviera</h2>
+                </div>
+                <div class="card-container">
+                    <img src="/images/sth/sth2011/datsun.jpg" alt="2023 JEEP® SCRAMBLER">
+                    <h2>Datsun 240Z</h2>
+                </div>
+                <div class="card-container">
+                    <img src="/images/sth/sth2011/elcamino.jpg" alt="2023 PAGANI HUAYRA ROADSTER">
+                    <h2>’80 El Camino</h2>
+                </div>
+                <div class="card-container">
+                    <img src="/images/sth/sth2011/splitback.jpg" alt="2023 PAGANI HUAYRA ROADSTER">
+                    <h2>OCC Splitback</h2>
+                </div>
+                <div class="card-container">
+                    <img src="/images/sth/sth2011/59chevy.jpg" alt="2023 PAGANI HUAYRA ROADSTER">
+                    <h2>’59 Chevy Delivery</h2>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="right-section">
+            <h4 style="text-align:center">@_localization.Getkey("info1").Value</h4>
+            <div class="button-container">
+
+                <a href="/info/basecode" class="button">@_localization.Getkey("info2").Value</a>
+                <a href="/info/caseletters" class="button">@_localization.Getkey("info3").Value</a>
+                <a href="/info/longshortcard" class="button">@_localization.Getkey("info4").Value</a>
+                <a href="/info/siku" class="button">Siku</a>
+
+            </div>
+            <h4 style="text-align:center">@_localization.Getkey("info5").Value</h4>
+
+            <div class="button-container">
+
+                <a href="/info/redlines" class="button">Hot Wheels Redlines 1968 - 1976</a>
+                <a href="/info/blackwall77" class="button">Hot Wheels Blackwalls Era 1977 - 1988</a>
+                <a href="/info/bluecard89" class="button">Hot Wheels Blue Card Era 1989 - 1994</a>
+                <a href="/info/thunt" class="button">@_localization.Getkey("info6").Value</a>
+                <a href="/SuperTreauserHunt/index" class="button">@_localization.Getkey("info7").Value</a>
+
+            </div>
+            <h4 style="text-align:center">@_localization.Getkey("info8").Value</h4>
+
+            <div class="button-container">
+
+                <a href="/MatchboxSuperChase/index" class="button">@_localization.Getkey("info9").Value</a>
+
+            </div>
+            <h4 style="text-align:center">@_localization.Getkey("info10").Value</h4>
+
+            <div class="button-container">
+
+                <a href="/hwcase/index" class="button">2023 Case Letter</a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+
+</body>
+</html>
+
+
+
+

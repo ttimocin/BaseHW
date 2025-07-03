@@ -1,0 +1,232 @@
+﻿@model BaseHW.Models.DTO.SikuListVm
+
+
+@{
+    ViewData["Title"] = "Siku";
+
+    Layout = "_Layout";
+
+}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8201505636469020"
+            crossorigin="anonymous"></script>
+    <style>
+        .container {
+            display: flex;
+            max-width:800px;
+            margin: auto;
+            padding: 30px;
+            flex-direction: column;
+        }
+     
+       .container .cars{
+                max-width: 800px;
+            }
+       
+         .search{
+            margin-top: 70px; /* Sol ve sağdan en az 60px içerde olacak */
+        }
+   
+
+        .search-bar {
+            width: 100%;
+        }
+
+            .search-bar input[type="text"] {
+                padding: 0.7rem;
+                border: 1px solid lightgray;
+                border-radius: 0.25rem;
+                font-size: 1rem;
+                width: 70%;
+            }
+
+            .search-bar button {
+                border-radius: 0.25rem;
+                font-size: 1rem;
+                padding: 0.7rem 0.9rem;
+                border: none;
+                background-color: rgb(192, 192, 192);
+                color: black;
+                cursor: pointer;
+            }
+
+ 
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+
+        thead th {
+            background-color: #f2f2f2;
+            flex-direction: column;
+        }
+
+        .container .car .table thead  {
+            background-color: forestgreen;
+            flex-direction: column;
+        }
+
+
+        tr{
+            flex-direction:column;
+            font-size: 17px;
+        }
+
+        tbody tr td img{
+
+            max-width:150px;
+        }
+
+        tbody tr:hover {
+            background-color: #f5f5f5;
+        }
+
+
+        .pagination {
+            display: flex;
+            justify-content: right;
+            margin-top:10px;
+            margin-bottom:10px;
+        }
+
+            .pagination a {
+                color: black;
+                padding: 8px 16px;
+                text-decoration: none;
+                transition: background-color .3s;
+                margin-right:5px;
+                background-color: lightgray;
+            }
+
+                /* Style the active/current link */
+                .pagination a.active {
+                    background-color: green;
+                    color: white;
+
+                }
+
+                /* Add a grey background color on mouse-over */
+                .pagination a:hover:not(.active) {
+                    background-color: #ddd;
+                }
+
+        @@media screen and (max-width: 768px) {
+            .container {
+                max-width: 400px;
+            }
+
+
+            table {
+                width: 60%;
+                border-collapse: collapse;
+            }
+
+            container .cars {
+                max-width: 100px;
+            }
+
+            th, td {
+                padding: 2px;
+             }
+
+
+            tr {
+                font-size: 12px;
+            }
+
+            tbody tr td img {
+                max-width: 70px;
+            }
+
+            .pagination {
+                margin-right: 2rem;
+            }
+        }
+    </style>
+</head>
+
+
+<body>
+
+  <div class="container">
+        <div class="search">
+
+            <section class="search-bar">
+
+                <form method="get" asp-action="Siku" style="float:left">
+                    <input type="text" name="term" placeholder="@_localization.Getkey("arama").Value">
+                    <button type="submit"><i class="fa fa-search"></i></button>
+                </form>
+                <button onclick="window.location.href='/home/siku'" type="submit" style="margin-left:-20px;"><i class="fa fa-list-ol"></i></button>
+
+            </section>
+        </div>
+
+        <div class="cars" >
+
+             <table id="dataTable">
+                <thead>
+                  <tr>
+                        <th>@_localization.Getkey("image").Value   </th>
+                        <th>@_localization.Getkey("modeladi").Value   </th>
+                        <th>@_localization.Getkey("uretimyil").Value  </th>
+                        <th>@_localization.Getkey("renk").Value  </th>
+                        <th>@_localization.Getkey("olcek").Value</th>
+                  </tr>
+               </thead>
+
+                     @foreach (var siku in Model.SikuList)
+                      {
+                        <div class="table-container">
+     
+                           <tbody style="background-color:white">
+                              <tr>
+                               <td><img src="/Uploads/@siku.Image" ></td>
+                               <td>@siku.Title</td>
+                               <td>@siku.SikuyearNames</td>
+                               <td>@siku.Renk</td>
+                               <td>@siku.Director</td>
+                             </tr>
+                           </tbody>
+                       </div>
+
+                      }
+              </table>
+      </div>
+    <div class="pagination">
+            @for (int i = 1; i <= Model.TotalPages; i++)
+            {
+                if (i == Model.CurrentPage)
+                {
+                <a href="/Home/Siku?currentPage=@i&term=@Model.Term" class="active">@i</a>
+                }
+                else
+                {
+                <a href="/Home/Siku?currentPage=@i&term=@Model.Term">@i</a>
+
+                }
+            }
+
+
+
+    </div>
+
+   </div>
+
+
+
+
+ </body>
+</html>
