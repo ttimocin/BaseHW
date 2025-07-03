@@ -103,6 +103,9 @@ app.UseAuthentication();
 
 app.UseAuthorization();
 
+// Healthcheck endpoint for Railway
+app.MapGet("/", () => "BaseHW is running!");
+
 app.MapControllerRoute(
     name: "area",
     pattern: "{area:exists}/{controller=Home}/{action=Index}/{id?}");
