@@ -48,7 +48,7 @@ builder.Services.AddScoped<ISikuService, SikuService>();
 builder.Services.AddScoped<IHwService, HwService>();
 
 // Railway PostgreSQL veya SQL Server kullanımı
-var connectionString = builder.Configuration.GetConnectionString("conn");
+var connectionString = Environment.GetEnvironmentVariable("DATABASE_URL") ?? builder.Configuration.GetConnectionString("conn");
 if (connectionString.Contains("postgresql") || connectionString.Contains("postgres"))
 {
     builder.Services.AddDbContext<ApplicationDbContext>(options => options.UseNpgsql(connectionString));
