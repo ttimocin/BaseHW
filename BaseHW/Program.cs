@@ -77,6 +77,10 @@ builder.Services.ConfigureApplicationCookie(options =>
 
 var app = builder.Build();
 
+// Railway port konfigürasyonu
+var port = Environment.GetEnvironmentVariable("PORT") ?? "8080";
+app.Urls.Add($"http://0.0.0.0:{port}");
+
 DataSeeding();
 
 
@@ -105,6 +109,8 @@ app.UseAuthorization();
 
 // Healthcheck endpoint for Railway
 app.MapGet("/", () => "BaseHW is running!");
+app.MapGet("/health", () => "OK");
+app.MapGet("/ping", () => "pong");
 
 app.MapControllerRoute(
     name: "area",
