@@ -113,6 +113,7 @@ app.UseAuthorization();
 // Healthcheck endpoint for Railway
 app.MapGet("/health", () => "OK");
 app.MapGet("/ping", () => "pong");
+app.MapGet("/test", () => "Test endpoint working!");
 
 app.MapControllerRoute(
     name: "area",
