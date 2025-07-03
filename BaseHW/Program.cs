@@ -49,12 +49,15 @@ builder.Services.AddScoped<IHwService, HwService>();
 
 // Railway PostgreSQL veya SQL Server kullanımı
 var connectionString = Environment.GetEnvironmentVariable("DATABASE_URL") ?? builder.Configuration.GetConnectionString("conn");
+Console.WriteLine($"Using connection string: {connectionString}");
 if (connectionString.Contains("postgresql") || connectionString.Contains("postgres"))
 {
+    Console.WriteLine("Using PostgreSQL provider");
     builder.Services.AddDbContext<ApplicationDbContext>(options => options.UseNpgsql(connectionString));
 }
 else
 {
+    Console.WriteLine("Using SQL Server provider");
     builder.Services.AddDbContext<ApplicationDbContext>(options => options.UseSqlServer(connectionString));
 }
 
@@ -126,11 +129,21 @@ void DataSeeding()
 {
     using (var scope = app.Services.CreateScope())
     {
-        var DbInitialize = scope.ServiceProvider.GetRequiredService<IDbInitializer>();
-        DbInitialize.Initialize();
-        
-        // Railway için migration çalıştırma
-        var context = scope.ServiceProvider.GetRequiredService<ApplicationDbContext>();
-        context.Database.Migrate();
+        try
+        {
+            // Önce migration'ları çalıştır
+            var context = scope.ServiceProvider.GetRequiredService<ApplicationDbContext>();
+            Console.WriteLine("Running database migrations...");
+            context.Database.Migrate();
+            Console.WriteLine("Migrations completed successfully!");
+            
+            // Sonra data seeding
+            var DbInitialize = scope.ServiceProvider.GetRequiredService<IDbInitializer>();
+            DbInitialize.Initialize();
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"Error during data seeding: {ex.Message}");
+        }
     }
 }
